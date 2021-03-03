@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c28e4a84-3b0c-463f-a5ff-cc05435eaa01" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pCX5EgTGahYlN82tcLQ5I5Rq4h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KidsGo" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\frontend\slon_IM\#src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c28e4a84-3b0c-463f-a5ff-cc05435eaa01" name="Default Changelist" comment="" />
+      <created>1614687861355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614687861355</updated>
+      <workItem from="1614687862470" duration="1387000" />
+      <workItem from="1614689313960" duration="1780000" />
+      <workItem from="1614691142241" duration="1784000" />
+      <workItem from="1614692963221" duration="1033000" />
+      <workItem from="1614694801088" duration="1903000" />
+      <workItem from="1614752480866" duration="18000" />
+      <workItem from="1614761398530" duration="1354000" />
+      <workItem from="1614764577737" duration="1776000" />
+      <workItem from="1614766399634" duration="2073000" />
+      <workItem from="1614768708413" duration="2777000" />
+      <workItem from="1614771557847" duration="1781000" />
+      <workItem from="1614773376050" duration="1843000" />
+      <workItem from="1614775677744" duration="1750000" />
+      <workItem from="1614777463259" duration="4054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="131" key="FileChooserDialogImpl" timestamp="1614764738105">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="131" key="FileChooserDialogImpl/0.0.1366.728/1366.-312.1920.1080@0.0.1366.728" timestamp="1614764738105" />
+    <state x="-903" y="450" key="FileChooserDialogImpl/0.0.1920.1040/-1366.312.1366.768@-1366.312.1366.768" timestamp="1614752495977" />
+  </component>
+</project>

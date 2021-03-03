@@ -1,0 +1,101 @@
+//-----------ОСНОВНЫЕ ЦВЕТА------------------
+$color_1e: #F5DF4D;
+$color_2w: #FFFFFF;
+$color_3b: #161616;
+$link-img: '..';
+
+//-----------Кнопка основная------------------
+
+.button{
+  background: $color_1e;
+  color: $color_3b;
+  text-align: center;
+  padding: 24px 32px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  border: 1px solid $color_1e;
+  @include adaptiv-font(20,16);
+  font-weight: 800;
+
+  &:hover{
+    color: $color_2w;
+    border: 1px solid $color_3b;
+  }
+  
+}
+
+//------------Заголовки и подзоголовки-----------------
+.title-offer{
+  @include adaptiv-font(54,30);
+  font-weight: 700;
+}
+
+.title{
+  @include adaptiv-font(36,24);
+  font-weight: 700;
+}
+
+.title-h3{
+  @include adaptiv-font(20,18);
+  font-weight: 600;
+  @include maq('tablet-wide') {
+    text-align: center;
+  }
+}
+
+
+//*=============================================
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+//=============================================
+
+//==============СКРОЛЛ НА МОБИЛЕ===============
+.BLOCK-SCROLL {
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+@media only screen and (max-width: 990px) {
+  .BLOCK-SCROLL_WIDTH {
+    display: flex;
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+}
+
+.NO-SKROLL {
+  height: 100vh;
+  overflow: hidden;
+}
+
+//*=============================================
+
+.container{
+  width: 100%;
+  padding: 0 15px;
+  position: relative;
+  margin: auto;
+  display: block;
+  @include mq('phablet') {
+    max-width: 540px;
+  }
+  @include mq('tablet') {
+    max-width: 720px;
+  }
+  @include mq('tablet-990') {
+    max-width: 960px;
+  }
+  @include mq('desktop') {
+    max-width: 1140px;
+  }
+  @include mq('desktop-wide') {
+    max-width: 1320px;
+  }
+  @include mq('2K') {
+    max-width: 1585px;
+  }
+}

@@ -1,0 +1,63 @@
+.header{
+  padding: 18px 0;
+  @include mq('desktop') {
+    padding: 20px 0;
+  }
+}
+
+.body-header{
+  display: grid;
+  grid-template-columns: 25px 55px 1fr ;
+  grid-gap: 15px;
+  align-items: center;
+
+  @include mq('phone') {
+    grid-template-columns: 25px 90px 1fr ;
+  }
+  @include mq('tablet') {
+    grid-template-columns: 30px 132px 1fr 1fr;
+    grid-gap: 30px;
+  }
+  @include mq('desktop') {
+    grid-template-columns: 132px 150px 1fr 1fr;
+    grid-gap: 60px;
+  }
+  @include mq('desktop-wide') {
+    grid-template-columns: 132px 150px 1fr auto;
+    grid-gap: 90px;
+  }
+}
+.wrapper-ic-btn{
+  text-align: end;
+  a{
+    padding: 3px 6px;
+    display: inline-block;
+    position: relative;
+
+    @include mq('phone-midle') {
+      padding: 3px 7px;
+    }
+    @include mq('tablet') {
+      padding: 7px 12px;
+    }
+  }
+}
+.wrapper-phone{
+  @include maq('tablet') {
+    display: none;
+  }
+  a{
+    position: relative;
+    display: block;
+    color: $color_3b;
+    padding: 5px;
+  }
+}
+.wrapper-logo{
+  .logo{
+    img{
+      max-width: 100%;
+    }
+  }
+
+}

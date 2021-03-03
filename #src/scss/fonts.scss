@@ -1,0 +1,10 @@
+@include font("a-futurica-extrabold", "a-futurica-extrabold", "800", "normal");
+@include font("OpenSans-Regular", "OpenSans-Regular", "400", "sans-serif");
+@include font("a-futurica", "a-futurica", "400", "normal");
+@include font("OpenSansCondensed-Bold", "OpenSansCondensed-Bold", "700", "sans-serif");
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  @include adaptiv-font(16,14);
+  line-height: 1.5;
+}
