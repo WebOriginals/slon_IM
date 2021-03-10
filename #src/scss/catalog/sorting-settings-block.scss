@@ -1,0 +1,27 @@
+.sorting-settings-block{
+  display: flex;
+  justify-content: space-between;
+  @include adaptiv-margin-bottom(50,35);
+  @include mq('tablet-wide') {
+    justify-content: flex-end;
+  }
+}
+
+.sorting-settings-block__sorting-wr{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.sorting-settings-block__sorting{
+  @include adaptiv-font(20,18);
+  @include maq('tablet-wide') {
+    display: none;
+  }
+}
+
+.sorting-settings-block__settings-wr{
+  padding: 5px;
+  @include mq('tablet-wide') {
+    display: none;
+  }
+}

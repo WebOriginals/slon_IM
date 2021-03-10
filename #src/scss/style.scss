@@ -9,4 +9,18 @@
 @import "menu.scss";
 @import "modal.scss";
 
+@import "card-goods.scss";
+@import "card-news.scss";
+@import "input-list.scss";
 
+
+//main
+@import "main/popular.scss";
+@import "main/catalog.scss";
+@import "main/news.scss";
+@import "main/reviews.scss";
+
+//catalog
+@import "catalog/sorting-settings-block.scss";
+@import "catalog/catalog-grid.scss";
+@import "catalog/saitbar.scss";

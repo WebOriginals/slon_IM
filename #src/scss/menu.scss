@@ -155,7 +155,7 @@
   &:hover {
     @include mq('desktop') {
       ul {
-        opacity: 1;
+        display: block;
         position: absolute;
         top: 30px;
         left: 0;
@@ -167,10 +167,9 @@
   ul {
     display: none;
     @include mq('desktop') {
-      opacity: 0;
-      display: block;
+      display: none;
+
       overflow: hidden;
-      height: 0;
       transition: 1.5s;
     }
 
@@ -463,4 +462,18 @@
   }
   background-position: right 3px;
   background-repeat: no-repeat;
+}
+
+.second-ul{
+  padding: 15px 15px;
+  background: rgba(22, 22, 22, 0.6);
+
+  a{
+    @include adaptiv-font(16,14);
+    color:$color_2w ;
+    font-weight: 500;
+    &:hover{
+      color:$color_1e ;
+    }
+  }
 }

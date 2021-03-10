@@ -89,5 +89,294 @@ if( $( '.body-header' ).length ) {
 
 
     
+    if( $( '.popular-container' ).length ) {
+    var swiper = new Swiper('.popular-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        lazy: true,
+        navigation: {
+            nextEl: '.popular-button-next',
+            prevEl: '.popular-button-prev',
+
+        },
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+
+            600: {
+                slidesPerView: 1.5,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            990: {
+                slidesPerView: 3,
+
+            },
+            1350: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+        }
+    });
+};
+    if( $( '.card-info__quantity' ).length ) {
+    function countFunc(count) {
+        var btnPlus = count.querySelector('.card-info__plus');
+        var btnMinus = count.querySelector('.card-info__minus');
+        var field = count.querySelector('.card-info__number');
+        var fieldValue = parseFloat(field.value, 10);//Прообразовываем к числу
+
+        btnMinus.addEventListener('click', function () {
+            if (fieldValue > 1) {
+                fieldValue--;
+                field.value = fieldValue;
+            } else {
+                return 1;
+            }
+        });
+        btnPlus.addEventListener('click', function () {
+            fieldValue++;
+            field.value = fieldValue;
+        });
+
+    }
+
+    var counts = document.querySelectorAll('.card-info__quantity');
+    counts.forEach(countFunc);
+}
+    if( $( '.news-main-container' ).length ) {
+    var swiper = new Swiper('.news-main-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        lazy: true,
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+
+            600: {
+                slidesPerView: 1.5,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            990: {
+                slidesPerView: 3,
+
+            },
+            1350: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+        }
+    });
+};
+    $(function () {
+
+    if ($(".reviews-container").length > 0) {
+
+
+            var loffset = function loffset() {
+                var e = $(window).innerWidth(),
+                    n = 0,
+                    t = $(".container").innerWidth();
+
+                return n = ((e - t) / 2) + 15;
+                n = parseInt(n);
+                n;
+            };
+
+
+        $(".reviews-container").each(function () {
+
+            var prsl = new Swiper(this, {
+
+                init: false,
+
+                slidesPerView: 1,
+                lazy: true,
+                preloadImages: false,
+                slideToClickedSlide: 1,
+                navigation: {
+                    nextEl: '.reviews-button-next',
+                    prevEl: '.reviews-button-prev',
+
+                },
+                breakpoints: {
+
+                    320: {
+                        slidesPerView: 1,
+                    },
+
+                    600: {
+                        slidesPerView: 1.5,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                    },
+
+                    990: {
+                        slidesPerView: 2.8,
+                        slidesOffsetBefore: loffset(),
+                        slidesOffsetAfter: loffset(),
+                    }
+                }
+
+
+            });
+
+
+            prsl.init();
+
+                $(window).resize(function () {
+                    prsl.params.slidesOffsetBefore = loffset();
+                    prsl.update(!0);
+                });
+
+                $(window).on("orientationchange", function () {
+                    prsl.params.slidesOffsetBefore = loffset();
+                    prsl.update(!0);
+
+                });
+
+        });
+    }
+});
+    if( $( '.price-text' ).length ) {
+    if (window.screen.width <= 1240) {
+        $('.select-value').html("ценa ↑");
+    }
+}
+
+( function( $ ){
+
+    // Настройки
+
+    var settings = {
+        select_value : 'select-value',
+        action : 'select_edit',
+        class_open : 'open',
+        class_transfotm : 'transfotm',
+        class_wrapper : 'wrapper-input',
+        class_block : 'wrapper-size',
+        class_buffer : 'input-buffer',
+        class_items : 'list__itams',
+        class_selector : 'js_size_selector',
+        class_disabel : 'list__itams-disabel',
+    };
+
+
+    var hendler = {
+
+        // Инициализация
+
+        construct : function(){
+            if( $( "." + settings.class_wrapper ).length ){
+                $( "." + settings.class_wrapper ).unbind( "click." + settings.action );
+                $( "." + settings.class_wrapper ).bind( "click." + settings.action, function (){
+                    hendler.select_action( this );
+                });
+            }
+        },
+
+        // Нажатие на блок селекта
+
+        select_action : function( elem ){
+
+            var input = $( elem ).find( 'input' ); // Инпут блока
+            var value = $( elem ).find( '.' + settings.select_value ); // Значение блока
+            var block = $( elem ).closest( '.' + settings.class_block ); // Находим общую обертку
+            var selector = $( block ).find( '.' + settings.class_selector ); // Находим облок элементов внутри общей обертки
+            var items = $( selector ).find( '.' + settings.class_items ).not( '.' + settings.class_disabel ); // Находим все item внутри общей обертки
+
+            // Закрыть селект
+
+            var close_select = function(){
+                $( items ).unbind( 'click.' + settings.action ); // Отменяем оброботчик кликов на item
+                $( document ).unbind( 'mouseup.' + settings.action ); // Отменяем обработчик клика вне общей обертки
+                $( selector ).removeClass( settings.class_open ); // Закрываем блок
+                $( block ).removeClass( settings.class_transfotm ); // Изменяем стрелку селекта
+            };
+
+            $( selector ).toggleClass( settings.class_open ); // Открываем или скрываем
+
+            // Если открыли блок селекта
+
+            if( $( selector ).hasClass( settings.class_open ) ){
+
+                $( block ).addClass( settings.class_transfotm ); // Изменяем стрелку селекта
+
+                // Определяем обработчик клика на item
+
+                $( items ).unbind( 'click.' + settings.action ).bind( 'click.' + settings.action, function(){
+
+                    $( value ).text( $( this ).text() ); // Берем текст из item и сохраняем в видимое выбраное значение
+                    $( input ).val( $( this ).data( 'value' ) || $( this ).text()).trigger("change"); // Берем дата параметр или текст из item и сохраняем в наш input
+
+                    if(window.screen.width<=1023) {
+                        $(value).text(value.text().substring(0, 27)); //ограничиваем кол-во символов на строке
+                        if ($(value).text().length >= 27) { // считаем сколько символов и если больше или равно 27 добавлять ...
+                            $(value).append("...");
+                        }
+                    } else {
+                        $(value).text(value.text().substring(0, 50)); //ограничиваем кол-во символов на строке
+                        if ($(value).text().length >= 50) { // считаем сколько символов и если больше или равно 27 добавлять ...
+                            $(value).append("...");
+                        }
+                    }
+                    close_select();
+                });
+
+                // Определяем обработчик клика вне блока
+
+                $( document ).unbind( 'mouseup.' + settings.action ).bind( 'mouseup.' + settings.action, function( e ){
+
+                    // Если нажали не на нашу общую обертку или не на блок внутри нее
+
+                    if( !$( block ).is( e.target ) && $( block ).has( e.target ).length === 0 ){ close_select(); }
+                });
+
+            } else { close_select(); }
+        }
+    };
+
+    window.obora_selector = hendler;
+
+    $( document ).ready( function(){ hendler.construct(); });
+
+})( jQuery );
+    if( $( '.sorting-settings-block__settings-wr' ).length ) {
+    $(".sorting-settings-block__settings-wr").click(function () {
+
+        $('.saitbar').addClass("settings-open");
+        $('.btn-close-sitings').addClass("btn-close-sitings-open");
+        $('body').addClass('no-scroll');
+    });
+    $(".btn-close-sitings").click(function () {
+
+        $('.btn-close-sitings').removeClass("btn-close-sitings-open");
+        $('.saitbar').removeClass("settings-open");
+        $('body').removeClass('no-scroll');
+    });
+}
+    if( $( '.category-filter' ).length ) {
+    $(".category-filter").click(function () {
+        var elem = this;
+        var block = $(elem).next('.wrapper-radio');
+        $(block).slideToggle(parameters);
+        $(elem).toggleClass("open");
+    });
+}
 
 })

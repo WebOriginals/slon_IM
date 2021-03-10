@@ -1,0 +1,138 @@
+.card-good-body{
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &:hover{
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.15);
+  }
+  @include mq('desktop-wide') {
+    padding: 30px;
+  }
+}
+
+.card-good__img{
+  display: block;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 73%;
+  @include adaptiv-margin-bottom(30,16);
+}
+
+.sale{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  background: $color_1e;
+  display: flex;
+  justify-content: center;
+
+  .num{
+    @include adaptiv-font(16,14);
+    align-self: center;
+  }
+}
+
+.name-favorite{
+  display: flex;
+  justify-content: space-between;
+  @include adaptiv-margin-bottom(15,10);
+}
+
+.favorite-popular{
+  .favorite{
+    cursor: pointer;
+  }
+  .favorite.active{
+    display: none;
+    z-index: 9;
+  }
+}
+
+.name{
+  @include adaptiv-font(20,18);
+  font-weight: bold;
+  color: $color_3b;
+}
+
+.descript{
+  @include adaptiv-font(16,14);
+  font-weight: 400;
+  @include adaptiv-margin-bottom(15,10);
+}
+
+.card-info__quantity{
+  border: 1px solid $color_3b;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card-info__minus,
+.card-info__plus{
+  align-self: center;
+  height: auto;
+  img{
+    display: block;
+  }
+}
+
+
+
+.card-info__number{
+  width: 17px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.productQuantity-btn{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 35% 1fr;
+}
+
+.popular__btn{
+  width: 100%;
+
+  @include mq('desktop') {
+    font-size: 12px;
+  }
+  @include mq('2K') {
+    font-size: 16px;
+  }
+}
+.price{
+  margin-top: auto;
+}
+
+.price__bottom{
+
+  display: flex;
+  @include adaptiv-margin-bottom(20,15);
+
+  .price__new{
+    @include adaptiv-font(28, 24);
+    font-weight: 500;
+    margin-right: 15px;
+  }
+  .price__old{
+   opacity: .5;
+    text-decoration: line-through;
+    align-self: flex-end;
+  }
+}
+
+.price__top{
+position: relative;
+  sub{
+    top: -5px;
+    position: absolute;
+  }
+}

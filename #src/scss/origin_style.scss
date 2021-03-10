@@ -2,7 +2,18 @@
 $color_1e: #F5DF4D;
 $color_2w: #FFFFFF;
 $color_3b: #161616;
-$link-img: '..';
+$color_4g: #BDBBBB;
+$link-img: '';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $color_3b;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.2;
+  background: $color_2w;
+}
 
 //-----------Кнопка основная------------------
 
@@ -10,17 +21,19 @@ $link-img: '..';
   background: $color_1e;
   color: $color_3b;
   text-align: center;
-  padding: 24px 32px;
+  padding: 18px 25px;
   cursor: pointer;
   transition: .5s;
   width: fit-content;
   border: 1px solid $color_1e;
-  @include adaptiv-font(20,16);
-  font-weight: 800;
+  @include adaptiv-font(16,14);
+  font-weight: 400;
+  text-transform: uppercase;
 
   &:hover{
-    color: $color_2w;
+    color: $color_3b;
     border: 1px solid $color_3b;
+    background: none;
   }
   
 }
@@ -90,7 +103,7 @@ $link-img: '..';
     max-width: 960px;
   }
   @include mq('desktop') {
-    max-width: 1140px;
+    max-width: 1180px;
   }
   @include mq('desktop-wide') {
     max-width: 1320px;

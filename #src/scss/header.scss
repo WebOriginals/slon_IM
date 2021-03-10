@@ -59,5 +59,14 @@
       max-width: 100%;
     }
   }
+}
 
+.number-goods{
+  @include adaptiv-font(14,12);
+  position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.ic-btn__bascket{
+  position: relative;
 }

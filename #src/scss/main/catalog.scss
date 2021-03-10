@@ -1,0 +1,44 @@
+.sec-catalog-main{
+  padding: 43px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+}
+
+.body-catalog-main{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mq('tablet-990') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include mq('desktop1350') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.ic-link{
+  img{
+    max-width: 100%;
+  }
+}
+
+.top-block{
+
+  .ic-link{
+    @include maq('tablet-990') {
+      display: none;
+    }
+  }
+}
+
+.ic-link.bot{
+  margin-top: 40px;
+  display: block;
+  @include mq('tablet-990') {
+    display: none;
+  }
+}

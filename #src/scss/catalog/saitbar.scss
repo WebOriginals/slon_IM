@@ -1,0 +1,82 @@
+.saitbar{
+  width: 100%;
+  background-color: $color_2w;
+  position: absolute;
+  top: 34px;
+  left: -104%;
+  transition: 1s;
+  z-index: 9;
+  height: 100%;
+
+  @include mq('tablet-wide') {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  &.settings-open{
+    left: 0;
+  }
+}
+
+.btn-close-sitings{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  @include mq('tablet-wide') {
+    display: none;
+  }
+}
+.filter__ttitle{
+  padding: 25px 30px;
+  background-color: #BDBBBB;
+
+}
+
+.body-filter{
+  padding: 40px 30px;
+}
+
+.category-filter{
+  @include adaptiv-font(16,14);
+  font-weight: bold;
+  padding-bottom: 10px;
+  @if ($link-img == '') {
+    background-image: url("./../../img/ic/arrow-black.svg");
+  } @else {
+    background-image: url($link-img + "/img/ic/arrow-black.svg");
+  }
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &.open{
+    @if ($link-img == '') {
+      background-image: url("./../../img/ic/arrow-eylloy.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/arrow-eylloy.svg");
+    }
+  }
+}
+
+.wrapper-radio{
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+
+  .label-radio{
+    @include adaptiv-font(16,14);
+    padding: 10px 5px;
+
+  }
+  .input-radio{
+    display: none;
+  }
+  .input-radio:checked + .label-radio{
+    color: $color_1e;
+    font-weight: bold;
+  }
+}
+
+.item-el{
+  border-bottom: 1px solid $color_4g;
+  margin-bottom: 15px;
+}

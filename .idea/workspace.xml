@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c28e4a84-3b0c-463f-a5ff-cc05435eaa01" name="Default Changelist" comment="" />
+    <list default="true" id="c28e4a84-3b0c-463f-a5ff-cc05435eaa01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/#src/catalog.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/btn-settings-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/drop-down list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/input-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/main-news-sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/popular-sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/quantity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/js/reviews-sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/catalog/catalog.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/catalog/saitbar.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/main/catalog.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/main/news.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/main/popular.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/pug/main/reviews.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/card-goods.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/card-news.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/catalog-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/sorting-settings-block.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/input-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/main/catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/main/news.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/main/popular.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/main/reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/pug/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/pug/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/origin_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/origin_style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,12 +70,16 @@
       <list>
         <option value="Sass File" />
         <option value="Pug File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1pCX5EgTGahYlN82tcLQ5I5Rq4h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,11 +118,56 @@
       <workItem from="1614773376050" duration="1843000" />
       <workItem from="1614775677744" duration="1750000" />
       <workItem from="1614777463259" duration="4054000" />
+      <workItem from="1614783845909" duration="193000" />
+      <workItem from="1615270651022" duration="1778000" />
+      <workItem from="1615272492810" duration="1776000" />
+      <workItem from="1615274301748" duration="1766000" />
+      <workItem from="1615276143364" duration="848000" />
+      <workItem from="1615278159068" duration="1776000" />
+      <workItem from="1615279971147" duration="1769000" />
+      <workItem from="1615281779379" duration="925000" />
+      <workItem from="1615283772619" duration="2573000" />
+      <workItem from="1615286442360" duration="1784000" />
+      <workItem from="1615288280553" duration="1840000" />
+      <workItem from="1615290161587" duration="1625000" />
+      <workItem from="1615292028258" duration="1804000" />
+      <workItem from="1615293870446" duration="1778000" />
+      <workItem from="1615295702516" duration="1215000" />
+      <workItem from="1615297698743" duration="1776000" />
+      <workItem from="1615299520116" duration="3168000" />
+      <workItem from="1615356548007" duration="1769000" />
+      <workItem from="1615358363998" duration="1773000" />
+      <workItem from="1615360186575" duration="1771000" />
+      <workItem from="1615361994906" duration="1568000" />
+      <workItem from="1615363883560" duration="1776000" />
+      <workItem from="1615365709345" duration="1350000" />
+      <workItem from="1615368070095" duration="1520000" />
+      <workItem from="1615370674335" duration="1775000" />
+      <workItem from="1615372510367" duration="1303000" />
+      <workItem from="1615374683919" duration="2451000" />
+      <workItem from="1615377172143" duration="1773000" />
+      <workItem from="1615379000535" duration="1763000" />
+      <workItem from="1615380817148" duration="2513000" />
+      <workItem from="1615383372258" duration="1769000" />
+      <workItem from="1615385183918" duration="1787000" />
+      <workItem from="1615387010591" duration="301000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="131" key="FileChooserDialogImpl" timestamp="1614764738105">
@@ -68,5 +175,9 @@
     </state>
     <state x="463" y="131" key="FileChooserDialogImpl/0.0.1366.728/1366.-312.1920.1080@0.0.1366.728" timestamp="1614764738105" />
     <state x="-903" y="450" key="FileChooserDialogImpl/0.0.1920.1040/-1366.312.1366.768@-1366.312.1366.768" timestamp="1614752495977" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1615292510189">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728/1366.-312.1920.1080@0.0.1366.728" timestamp="1615292510189" />
   </component>
 </project>
