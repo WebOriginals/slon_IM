@@ -20,45 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c28e4a84-3b0c-463f-a5ff-cc05435eaa01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/#src/catalog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/btn-settings-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/drop-down list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/input-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/main-news-sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/popular-sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/quantity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/js/reviews-sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/catalog/catalog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/catalog/saitbar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/main/catalog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/main/news.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/main/popular.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/main/reviews.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/card-goods.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/card-news.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/catalog-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/catalog/sorting-settings-block.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/input-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/main/catalog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/main/news.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/main/popular.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/main/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/pug/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/pug/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/origin_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/origin_style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +115,7 @@
       <workItem from="1615380817148" duration="2513000" />
       <workItem from="1615383372258" duration="1769000" />
       <workItem from="1615385183918" duration="1787000" />
-      <workItem from="1615387010591" duration="301000" />
+      <workItem from="1615387010591" duration="1008000" />
     </task>
     <servers />
   </component>

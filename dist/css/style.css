@@ -920,7 +920,7 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   position: absolute;
-  top: 34px;
+  top: -15px;
   left: -104%;
   transition: 1s;
   z-index: 9;
@@ -938,12 +938,13 @@ body {
 }
 
 .filter__ttitle {
-  padding: 25px 30px;
-  background-color: #BDBBBB;
+  padding: 25px 20px;
+  font-size: calc(18px + 2 * ((100vw - 320px) / 1600));
+  font-weight: bold;
 }
 
 .body-filter {
-  padding: 40px 30px;
+  padding: 30px 30px;
 }
 
 .category-filter {
@@ -1176,6 +1177,10 @@ body {
 
   .btn-close-sitings {
     display: none;
+  }
+
+  .filter__ttitle {
+    background-color: #BDBBBB;
   }
 }
 
