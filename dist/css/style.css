@@ -1350,7 +1350,7 @@ a {
 
   .firstScreen-slide {
     background-size: 62%;
-    background-position: 30% 55%;
+    background-position: 30% 35%;
   }
 
   .body-slide {
@@ -1547,7 +1547,7 @@ a {
 
   .firstScreen-slide {
     background-size: 78%;
-    background-position: 17% 55%;
+    background-position: 17% 10%;
   }
 
   .body-slide {
@@ -1575,7 +1575,7 @@ a {
 
   .firstScreen-slide {
     background-size: 65%;
-    background-position: 17% 55%;
+    background-position: 25% 15%;
   }
 
   .item-color {
@@ -1649,7 +1649,7 @@ a {
 
   .firstScreen-slide {
     background-size: 62%;
-    background-position: 25% 55%;
+    background-position: 25% -50%;
   }
 
   .wrapper-color {
@@ -1665,6 +1665,10 @@ a {
   .firstScreen-slide {
     background-size: 45%;
     background-position: 40% 55%;
+  }
+
+  .color-contend__text-btn {
+    grid-gap: 3px;
   }
 }
 

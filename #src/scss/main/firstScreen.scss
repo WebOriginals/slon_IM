@@ -27,20 +27,20 @@
   }
   @include mq('tablet-wide') {
     background-size: 62%;
-    background-position: 30% 55%;
+    background-position: 30% 35%;
   }
   @include mq('desktop') {
     background-size: 78%;
-    background-position: 17% 55%;
+    background-position: 17% 10%;
   }
   @include mq('desktop1350') {
     background-size: 65%;
-    background-position: 17% 55%;
+    background-position: 25% 15%;
   }
 
   @include mq('2K') {
     background-size: 62%;
-    background-position: 25% 55%;
+    background-position: 25% -50%;
   }
   @include mq('2.5K') {
     background-size: 45%;
@@ -122,6 +122,7 @@
   @include mq('desktop1350') {
     grid-template-columns: 30% 1fr;
   }
+
 }
 
 .color__img{
@@ -150,5 +151,8 @@
   align-items: center;
   @include mq('2K') {
     grid-template-columns: 1fr 1fr;
+  }
+  @include mq('2.5K') {
+    grid-gap: 3px;
   }
 }
