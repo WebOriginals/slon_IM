@@ -12,9 +12,11 @@
 @import "card-goods.scss";
 @import "card-news.scss";
 @import "input-list.scss";
+@import "radio_checkbox.scss";
 
 
 //main
+@import "main/firstScreen.scss";
 @import "main/popular.scss";
 @import "main/catalog.scss";
 @import "main/news.scss";
@@ -24,3 +26,4 @@
 @import "catalog/sorting-settings-block.scss";
 @import "catalog/catalog-grid.scss";
 @import "catalog/saitbar.scss";
+@import "catalog/filter-price.scss";

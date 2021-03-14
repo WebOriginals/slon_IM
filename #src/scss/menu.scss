@@ -129,7 +129,6 @@
 .link-menu {
   font-size: 18px;
   position: relative;
-  margin-bottom: 15px;
   @if ($link-img == '') {
     background-image: url("./../img/ic/arrow-blue.svg");
   } @else {
@@ -157,9 +156,9 @@
       ul {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 25px;
         left: 0;
-        height: auto;
+
       }
     }
   }
@@ -167,18 +166,19 @@
   ul {
     display: none;
     @include mq('desktop') {
-      display: none;
-
+      width: max-content;
       overflow: hidden;
       transition: 1.5s;
     }
 
     li {
-      margin-bottom: 8px;
+
 
       a {
         @include adaptiv-font(14, 14);
         font-weight: 400;
+        padding: 8px;
+        display: block;
       }
     }
   }

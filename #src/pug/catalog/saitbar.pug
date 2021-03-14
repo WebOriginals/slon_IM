@@ -72,3 +72,44 @@ form.saitbar
 
                     input#product-type_5(type="radio" name="product-type" value="Мрамор").input-radio
                     label(for="product-type_5").label-radio Мрамор
+
+    .saitbar__block-filter
+        .filter__ttitle Бренды
+        .body-filter
+            .item-el-check
+                .wrapper-checkbox
+                    input#check1(type="checkbox" name="product-type" value="Caparol" checked).input-checkbox
+                    label(for="check1").label-checkbox Caparol
+
+                    input#check2(type="checkbox" name="product-type" value="Paint & Paper Library").input-checkbox
+                    label(for="check2").label-checkbox Paint & Paper Library
+
+                    input#check3(type="checkbox" name="product-type" value="STO Color").input-checkbox
+                    label(for="check3").label-checkbox STO Color
+
+                    input#check4(type="checkbox" name="product-type" value="Ecophon").input-checkbox
+                    label(for="check4").label-checkbox Ecophon
+
+                    input#check5(type="checkbox" name="product-type" value="Metallocryl").input-checkbox
+                    label(for="check5").label-checkbox Metallocryl
+
+    .saitbar__block-filter
+        .filter__ttitle Цена
+        .body-filter
+            .filter-slider-price
+                .range(data-width="100" data-type="double" data-units="")
+                    .range-fill
+                    span.min-range-item(data-value="0")
+                    span.max-range-item(data-value="20000")
+
+                .info
+                    .min-box
+                        span.min-price
+                        span р
+                    .max-box
+                        span.max-price
+                        span р
+            .wrapper-btn
+                .btn-filter__Cancel  Сбросить
+                .btn-filter.button_no-background Применить
+

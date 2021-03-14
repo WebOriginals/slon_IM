@@ -1,3 +1,11 @@
+.sec-catalog{
+  padding: 40px 0 120px;
+  @include mq('desktop1350') {
+    padding: 85px 0 140px;
+  }
+}
+
+
 .body-catalog{
   display: grid;
   grid-template-columns: 1fr;

@@ -46,6 +46,11 @@ $(function () {
                         slidesPerView: 2.8,
                         slidesOffsetBefore: loffset(),
                         slidesOffsetAfter: loffset(),
+                    },
+                    2500: {
+                        slidesPerView: 4.5,
+                        slidesOffsetBefore: loffset(),
+                        slidesOffsetAfter: loffset(),
                     }
                 }
 
