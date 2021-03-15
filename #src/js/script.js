@@ -10,6 +10,7 @@ $( document ).ready(function() {
     @@include('sliders/pageMain-news-sl.js')
     @@include('sliders/pageMain-popular-sl.js')
     @@include('sliders/pageMain-reviews-sl.js')
+    @@include('sliders/pageCardGood-sl.js')
     // end sliders
 
     //меню
@@ -29,4 +30,7 @@ $( document ).ready(function() {
 
     //фильтер цены
     @@include('filter-price.js')
+
+    //tabs
+    @@include('tabs.js')
 })

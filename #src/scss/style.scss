@@ -13,6 +13,7 @@
 @import "card-news.scss";
 @import "input-list.scss";
 @import "radio_checkbox.scss";
+@import "tabs.scss";
 
 
 //main
@@ -27,3 +28,7 @@
 @import "catalog/catalog-grid.scss";
 @import "catalog/saitbar.scss";
 @import "catalog/filter-price.scss";
+
+//card-good
+@import "card-good/card-good-slider.scss";
+@import "card-good/tab.scss";

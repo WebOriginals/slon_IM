@@ -55,7 +55,8 @@ $( document ).ready(function() {
 }
 
     // sliders
-    var swiper = new Swiper('.firstScreen-container', {
+    if ($('.firstScreen-container').length) {
+var swiper = new Swiper('.firstScreen-container', {
     lazy: true,
     pagination: {
         el: '.firstScreen-pagination',
@@ -69,6 +70,7 @@ $( document ).ready(function() {
     },
 
 });
+};
     if( $( '.news-main-container' ).length ) {
     var swiper = new Swiper('.news-main-container', {
         slidesPerView: 1,
@@ -213,6 +215,37 @@ $( document ).ready(function() {
         });
     }
 });
+    if ($('.slider-large-container').length) {
+    var sliderLlittle = new Swiper('.slider-little-container', {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        lazy: true,
+        slideToClickedSlide: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+                spaceBetween: 15,
+            },
+            1024: {
+                spaceBetween: 30,
+            },
+        }
+    });
+
+
+    var sliderLarge = new Swiper('.slider-large-container', {
+        lazy: true,
+        thumbs: {
+            swiper: sliderLlittle
+        }
+    });
+
+};
+
+
+
     // end sliders
 
     //меню
@@ -556,4 +589,39 @@ if( $( '.filter-slider-price' ).length ) {
     rangeBlock.addEventListener('mousedown', check);
     rangeBlock.addEventListener('touchstart', check);
 }
+
+    //tabs
+    if ($('.tabs').length) {
+    let tab = function () {
+        let AllBodyTabs = document.querySelectorAll('.tabs');
+
+        AllBodyTabs.forEach(tab=> {
+
+            let tabNav = tab.querySelectorAll('.tabs-nav__item'),
+                tabContant = tab.querySelectorAll('.tab-pane'),
+                tabName;
+
+            let selectTabContant = function() {
+
+                tabContant.forEach(item=>{
+                    item.classList.contains(tabName)? item.classList.add('is-active'): item.classList.remove('is-active');
+                })
+            }
+
+            tabNav.forEach(item => {
+                item.addEventListener('click', function(){
+
+                    tabNav.forEach(item=>{
+                        item.classList.remove('is-active')
+                    });
+
+                    this.classList.add('is-active');
+                    tabName = this.getAttribute('data-tab-name')
+                    selectTabContant(tabName);
+                })
+            })
+        });
+    }
+    tab();
+};
 })

@@ -1,3 +1,4 @@
+if ($('.firstScreen-container').length) {
 var swiper = new Swiper('.firstScreen-container', {
     lazy: true,
     pagination: {
@@ -12,3 +13,4 @@ var swiper = new Swiper('.firstScreen-container', {
     },
 
 });
+};
