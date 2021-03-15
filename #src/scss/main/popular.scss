@@ -9,7 +9,7 @@
   border-bottom: 1px solid $color_3b;
   padding-bottom: 5px;
   display: grid;
-  grid-template-columns: 1fr 233px;
+  grid-template-columns: 1fr 250px;
   align-items: center;
   @include adaptiv-margin-bottom(40,20);
 
@@ -28,6 +28,7 @@
 
 .arrov-popular{
   cursor: pointer;
+  padding: 5px;
   &:hover{
     opacity: .5;
   }

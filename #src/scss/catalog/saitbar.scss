@@ -2,22 +2,34 @@
   width: 100%;
   background-color: $color_2w;
   position: absolute;
-  top: -15px;
+  top: 0;
   left: -104%;
   transition: 1s;
   z-index: 9;
   height: 100%;
 
+  @include maq('tablet-small') {
+    height: calc(100vh - 97px);
+  }
+  @include maq('tablet-wide') {
+    height: calc(100vh - 125px);
+    overflow-y: auto;
+  }
   @include mq('tablet-wide') {
     position: relative;
     left: 0;
     top: 0;
+
   }
   &.settings-open{
     left: 0;
   }
 }
-
+.saitbar__block-filter {
+  @include mq('tablet-wide') {
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.15);
+  }
+}
 .btn-close-sitings{
   position: absolute;
   top: 30px;
@@ -32,6 +44,7 @@
   font-weight: bold;
   @include mq('tablet-wide') {
     background-color: #BDBBBB;
+    padding: 30px;
   }
 }
 
@@ -43,6 +56,8 @@
   @include adaptiv-font(16,14);
   font-weight: bold;
   padding-bottom: 10px;
+  cursor: pointer;
+  padding-right: 15px;
   @if ($link-img == '') {
     background-image: url("./../../img/ic/arrow-black.svg");
   } @else {
@@ -61,25 +76,48 @@
 }
 
 .wrapper-radio{
-  padding: 10px 30px;
+  padding: 10px 10px 10px 15px;
   display: flex;
   flex-direction: column;
-
-  .label-radio{
-    @include adaptiv-font(16,14);
-    padding: 10px 5px;
-
-  }
-  .input-radio{
-    display: none;
-  }
-  .input-radio:checked + .label-radio{
-    color: $color_1e;
-    font-weight: bold;
+  @include mq('tablet-wide') {
+    padding: 10px 0 10px 30px;
   }
 }
 
 .item-el{
   border-bottom: 1px solid $color_4g;
   margin-bottom: 15px;
+}
+
+.btn-filter__Cancel{
+  cursor: pointer;
+  color: $color_3b;
+  text-align: center;
+  @include adaptiv-font(14,14);
+  &:hover{
+    color: $color_4g;
+  }
+}
+
+.wrapper-btn{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr;
+    .btn-filter{
+      order: -1;
+      margin: auto;
+    }
+  }
+  @include mq('desktop-wide') {
+    grid-template-columns: 1fr 1fr;
+    .btn-filter{
+      order: 1;
+    }
+  }
+
+  grid-gap: 20px;
+  align-items: center;
 }

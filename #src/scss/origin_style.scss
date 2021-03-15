@@ -38,10 +38,33 @@ body {
   
 }
 
+.button_no-background{
+  color: $color_3b;
+  text-align: center;
+  padding: 18px 25px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  border: 1px solid $color_3b;
+  @include adaptiv-font(16,14);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:hover{
+    color: $color_3b;
+    border: 1px solid $color_1e;
+    background: $color_1e;
+  }
+
+}
+
 //------------Заголовки и подзоголовки-----------------
 .title-offer{
   @include adaptiv-font(54,30);
   font-weight: 700;
+  span{
+    color: $color_1e;
+  }
 }
 
 .title{
@@ -55,6 +78,9 @@ body {
   @include maq('tablet-wide') {
     text-align: center;
   }
+}
+a{
+  color: $color_3b;
 }
 
 
@@ -110,5 +136,19 @@ body {
   }
   @include mq('2K') {
     max-width: 1585px;
+  }
+}
+
+.square{
+
+  li{
+    @if ($link-img == '') {
+      background-image: url("./../img/ic/square.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/square.svg");
+    }
+    padding-left: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
   }
 }
