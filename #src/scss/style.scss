@@ -20,6 +20,7 @@
 @import "card-news.scss";
 @import "radio_checkbox.scss";
 @import "feedbackForm/feedbackForm.scss";
+@import "pagenation.scss";
 
 
 //main
@@ -44,3 +45,9 @@
 
 //delivery
 @import "deliveryGuaranteePayment/delivery.scss";
+
+//about_us
+@import "about_us/about_us.scss";
+
+//blog
+@import "blog/blog.scss";

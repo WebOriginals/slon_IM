@@ -1,0 +1,40 @@
+.wrapper-btn-pagination{
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  @include maq('tablet') {
+    justify-content: center;
+  }
+}
+
+.ul-pagination{
+  display: flex;
+  @include maq('tablet') {
+    display: none;
+  }
+
+  li{
+    border: 1px solid $color_4g;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    margin-right: 5px;
+    &:nth-child(4),&:hover:nth-child(4){
+      border: none;
+      line-height: 2.1;
+    }
+    &.active,&:hover{
+      border: 1px solid $color_3b;
+    }
+  }
+  a{
+    display: block;
+    padding: 8px;
+    line-height: 1;
+    align-self: center;
+  }
+}
+
+.pagination-btn{
+  text-transform: uppercase;
+}
