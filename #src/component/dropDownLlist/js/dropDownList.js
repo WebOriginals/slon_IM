@@ -1,7 +1,7 @@
-if( $( '.category-filter' ).length ) {
-    $(".category-filter").click(function () {
+if( $( '.dropDownList-title' ).length ) {
+    $(".dropDownList-title").click(function () {
         var elem = this;
-        var block = $(elem).next('.wrapper-radio');
+        var block = $(elem).next('.dropDownList-hidden');
         $(block).slideToggle(parameters);
         $(elem).toggleClass("open");
     });

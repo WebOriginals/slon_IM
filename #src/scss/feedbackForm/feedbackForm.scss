@@ -1,0 +1,63 @@
+.sec-feedbackForm{
+  padding: 0 0 100px;
+}
+
+.body-feedbackForm{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+  }
+  @include mq('desktop') {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 77px;
+  }
+}
+
+.feedbackForm__title{
+  @include adaptiv-font(36,24);
+  font-weight: bold;
+  @include adaptiv-margin-bottom(30,45);
+}
+
+.feedbackForm__text{
+  @include adaptiv-margin-bottom(60,30);
+}
+
+.wrapper-inputs{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  @include adaptiv-margin-bottom(70,30);
+
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .wrapper-field-input{
+    padding: 10px 10px 5px 0;
+    border-bottom: 1px solid $color_3b;
+    width: 100%;
+    &::placeholder{
+      color: $color_3b;
+    }
+  }
+}
+
+.politics{
+  @include adaptiv-margin-bottom(20,10);
+}
+
+.feedbackForm__img{
+  @include maq('tablet') {
+    order: -1;
+  }
+  background-position: center;
+  background-size: cover;
+  max-height: 390px;
+  min-height: 206px;
+  padding-top: 50%;
+  background-repeat: no-repeat;
+}

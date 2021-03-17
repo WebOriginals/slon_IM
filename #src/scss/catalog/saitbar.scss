@@ -9,7 +9,7 @@
   height: 100%;
 
   @include maq('tablet-small') {
-    height: calc(100vh - 97px);
+    height: calc(100vh - 137px);
   }
   @include maq('tablet-wide') {
     height: calc(100vh - 125px);

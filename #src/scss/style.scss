@@ -4,16 +4,22 @@
 @import "fonts";
 @import "origin_style.scss";
 
+//component
+@import "../component/dropDownLlist/scss/dropDownLlist.scss";
+@import "../component/Tabs/scss/tabs.scss";
+@import "../component/InputList/scss/InpuList.scss";
+
+
 
 @import "header.scss";
+@import "footer.scss";
 @import "menu.scss";
 @import "modal.scss";
 
 @import "card-goods.scss";
 @import "card-news.scss";
-@import "input-list.scss";
 @import "radio_checkbox.scss";
-@import "tabs.scss";
+@import "feedbackForm/feedbackForm.scss";
 
 
 //main
@@ -32,3 +38,9 @@
 //card-good
 @import "card-good/card-good-slider.scss";
 @import "card-good/tab.scss";
+
+//basket
+@import "basket/card.scss";
+
+//delivery
+@import "deliveryGuaranteePayment/delivery.scss";
