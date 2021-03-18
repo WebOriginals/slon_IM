@@ -10,7 +10,20 @@ $( document ).ready(function() {
     @@include('sliders/pageMain-news-sl.js')
     @@include('sliders/pageMain-popular-sl.js')
     @@include('sliders/pageMain-reviews-sl.js')
+    @@include('sliders/pageCardGood-sl.js')
     // end sliders
+
+
+    //component
+
+    // паказывает и скрывает блок (аккардион)
+    @@include('../component/dropDownLlist/js/dropDownList.js')
+    @@include('../component/InputList/js/InputList.js')
+    @@include('../component/Tabs/js/Tabs.js')
+    @@include('../component/map/js/map.js')
+    // end component
+
+
 
     //меню
     @@include('menu.js')
@@ -24,9 +37,9 @@ $( document ).ready(function() {
     // скрипт для открытия блока с фильтрами в каталоге
     @@include('btn-settings-mobile.js')
 
-    // паказывает и скрывает блок (аккардион)
-    @@include('drop-down list.js')
-
     //фильтер цены
     @@include('filter-price.js')
+
+
+
 })

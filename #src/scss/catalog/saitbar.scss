@@ -1,25 +1,22 @@
 .saitbar{
   width: 100%;
   background-color: $color_2w;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -104%;
   transition: 1s;
-  z-index: 9;
+  z-index: 11;
   height: 100%;
 
   @include maq('tablet-small') {
-    height: calc(100vh - 97px);
-  }
-  @include maq('tablet-wide') {
-    height: calc(100vh - 125px);
+    height: 100vh;
     overflow-y: auto;
   }
+
   @include mq('tablet-wide') {
     position: relative;
     left: 0;
     top: 0;
-
   }
   &.settings-open{
     left: 0;

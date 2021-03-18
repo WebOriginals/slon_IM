@@ -1,0 +1,27 @@
+.dropDownList-title{
+  padding-bottom: 10px;
+  cursor: pointer;
+  padding-right: 15px;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @if ($link-img == '') {
+    background-image: url("./../../../img/ic/arrow-black.svg");
+  } @else {
+    background-image: url($link-img + "/img/ic/arrow-black.svg");
+  }
+
+  &.open{
+    @if ($link-img == '') {
+      background-image: url("./../../../img/ic/arrow-eylloy.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/arrow-eylloy.svg");
+    }
+  }
+}
+
+.dropDownList-hidden{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}

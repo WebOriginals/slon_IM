@@ -1,7 +1,7 @@
 .sec-popular{
   padding: 43px 0;
   @include mq('tablet-wide') {
-    padding: 0 0 75px;
+    padding: 70px 0 75px;
   }
 }
 
@@ -9,10 +9,12 @@
   border-bottom: 1px solid $color_3b;
   padding-bottom: 5px;
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr;
   align-items: center;
   @include adaptiv-margin-bottom(40,20);
-
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 250px;
+  }
   .nav-sl-popular{
     @include maq('tablet-wide') {
       display: none;
@@ -43,6 +45,7 @@
     padding: 25px 15px;
   }
 }
+
 .body-popular{
   .nav-sl-popular{
     margin-top: 40px;
@@ -59,6 +62,7 @@
     }
   }
 }
+
 .popular-slide{
   height: auto;
 }

@@ -1,0 +1,81 @@
+.sec_2-tabs{
+  padding: 25px 0 80px;
+  @include mq('tablet-990') {
+    padding: 0 0 180px;
+  }
+}
+
+.desctop-tabs{
+  display: none;
+  @include mq('tablet-990') {
+    display: block;
+    padding-bottom: 90px;
+  }
+}
+.mobile-tabs{
+  @include mq('tablet-990') {
+    display: none;
+  }
+}
+
+.table-specifications{
+  td {
+    padding: 10px 30px 10px 0;
+
+    @include mq('tablet') {
+      padding: 10px 60px 10px 0;
+    }
+
+    &:first-child {
+      font-weight: bold;
+    }
+    &:last-child {
+      font-weight: 300;
+    }
+  }
+  tr{
+    position: relative;
+  }
+}
+
+.document{
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.availability__item{
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    width: max-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+  }
+
+}
+
+.availability-item__name{
+  font-weight: bold;
+}
+
+.availability-item__address{
+  grid-column: span 2;
+}
+
+.application-method{
+  h2{
+    font-weight: bold;
+    @include adaptiv-margin-bottom(20,10);
+  }
+}
+
+.mobile-tabs__title{
+  font-weight: bold;
+  @include adaptiv-font(18,18);
+  margin-bottom:20px;
+}

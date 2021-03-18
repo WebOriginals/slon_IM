@@ -1,12 +1,17 @@
 .header{
-  position: absolute;
-  width: 100%;
+  //position: absolute;
+  //width: 100%;
 
   z-index: 10;
   padding: 18px 0;
   @include mq('desktop') {
     padding: 20px 0;
   }
+}
+
+.home .header {
+  position: absolute;
+  width: 100%;
 }
 
 .body-header{
@@ -23,11 +28,11 @@
     grid-gap: 30px;
   }
   @include mq('desktop') {
-    grid-template-columns: 132px 150px 1fr 1fr;
+    grid-template-columns: 132px 150px 1fr auto;
     grid-gap: 60px;
   }
   @include mq('desktop-wide') {
-    grid-template-columns: 132px 150px 1fr auto;
+    grid-template-columns: 132px 155px 1fr auto;
     grid-gap: 90px;
   }
 }

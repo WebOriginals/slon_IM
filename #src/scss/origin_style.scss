@@ -11,8 +11,9 @@ body {
   color: $color_3b;
   font-weight: 400;
   min-height: 100vh;
-  line-height: 1.2;
+  line-height: 1.5;
   background: $color_2w;
+  @include adaptiv-font(16,14);
 }
 
 //-----------Кнопка основная------------------
@@ -21,7 +22,7 @@ body {
   background: $color_1e;
   color: $color_3b;
   text-align: center;
-  padding: 18px 25px;
+  padding: 15px 20px;
   cursor: pointer;
   transition: .5s;
   width: fit-content;
@@ -151,4 +152,7 @@ a{
     background-position: left;
     background-repeat: no-repeat;
   }
+}
+.d-none{
+  display: none;
 }

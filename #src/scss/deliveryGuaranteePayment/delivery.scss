@@ -1,0 +1,34 @@
+.sec-question-answer{
+  padding: 50px 0 100px;
+}
+
+.body-question-answer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 51%;
+    grid-gap: 130px;
+  }
+}
+
+.question-answer__description{
+  h2{
+    @include adaptiv-font(20,18);
+    font-weight: 600;
+    @include adaptiv-margin-bottom(30,20);
+  }
+  
+}
+
+.question-answer__img{
+  @include maq('tablet-990') {
+    order: -1;
+  }
+  background-position: center;
+  background-size: cover;
+  max-height: 585px;
+  min-height: 206px;
+  padding-top: 73%;
+  background-repeat: no-repeat;
+}

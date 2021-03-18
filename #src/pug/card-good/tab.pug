@@ -1,0 +1,137 @@
+section.sec_2-tabs
+    .container
+        .desctop-tabs
+            .tabs
+                .tabs__nav.tabs-nav
+                    .tabs-nav__item(data-tab-name="tab-1") Характеристики
+                    .tabs-nav__item(data-tab-name="tab-2") Способ нанесения
+                    .tabs-nav__item.is-active(data-tab-name="tab-3") Документация
+                    .tabs-nav__item(data-tab-name="tab-4") Наличие в магазинах
+
+                .tabs__content
+                    .tab-pane.tab-1
+                        table.table-specifications
+                            tr
+                                td Тип продукта
+                                td Краска акриловая
+                            tr
+                                td Условия применения
+                                td Для наружных работ
+                            tr
+                                td Область применения
+                                td Фасады и стены
+                            tr
+                                td Торговая марка
+                                td Эксперт
+                            tr
+                                td Основа для нанесения
+                                td Бетон, штукатурка, кирпич, камень, гипсокартон, ДСП
+
+
+                    .tab-pane.tab-2
+                        .application-method
+                            h2 СПОСОБ НАНЕСЕНИЯ
+                            p Штукатурка готова к применению. Перед нанесением тщательно перемешать. При необходимости, развести водой не более 2%. Поверхность должна быть прочной, чистой и сухой. Поврежденные старые покрытия удалить. Краски на клеевой основе и меловые поверхности тщательно смыть. Мелящиеся поверхности предварительно обработать грунтовкой JOBI PutzGrund. Сильно впитывающие поверхности (гипс, сухие штукатурки) – JOBI TiefGrund. Для улучшения адгезии на гладких поверхностях рекомендуется применить структурную грунтовку JOBI StrukturQuarzGrund. Нанести штукатурку мастерком или кельмой из нержавеющей стали и сразу же сформировать окончательный ровный слой толщиной примерно 1.5 мм. Во избежание образования видимых стыков на покрытии, рекомендуется наносить штукатурку за один проход методом «сырое по сырому». Время полной готовности покрытия к эксплуатации – около 2-3 суток при температуре воздуха +20°С и относительной влажности не более 65%. Не работать в дождь и при температуре ниже +5°С. Сразу после работы инструменты очистить водой.
+                            br
+                            br
+                            h2 ПОДГОТОВКА ПОВЕРХНОСТИ
+                            p Поверхность должна быть прочной, чистой и сухой. Непрочные старые покрытия необходимо удалить. Краски на клеевой основе и меловые поверхности тщательно смыть. Сильно впитывающие поверхности (гипс, сухие штукатурки) обработать грунтовкой JOBI TiefGrund. Новые штукатурные основания просушить в течение 4-6 недель до нанесения JOBI BuntsteinPutz. Для улучшения сцепления на гладких поверхностях рекомендуется использовать структурную грунтовку StrukturQuarzGrund.
+                            br
+                            br
+                            h2 РАСХОД
+                            p Примерно 2-3 кг на 1 кв. м в зависимости от техники нанесения.
+
+                    .tab-pane.tab-3.is-active
+                        a.document(href="#")
+                            .document__ic
+                                img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/word.svg" data-src-small="img/ic/word.svg")
+                            .document__text Свидетельство о государственной регистрации
+                        a.document(href="#")
+                            .document__ic
+                                img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/pdf.svg" data-src-small="img/ic/pdf.svg")
+                            .document__text Свидетельство о государственной регистрации
+                        a.document(href="#")
+                            .document__ic
+                                img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/excel.svg" data-src-small="img/ic/excel.svg")
+                            .document__text Свидетельство о государственной регистрации
+                    .tab-pane.tab-4
+                        .availability
+                            .availability__item
+                                .availability-item__name Магазин "Cлон"
+                                .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                                .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br> Вс 10.00 - 19.00
+                            .availability__item
+                                .availability-item__name Магазин "Cлон"
+                                .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                                .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br>Вс 10.00 - 19.00
+                            .availability__item
+                                .availability-item__name Магазин "Cлон"
+                                .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                                .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br> Вс 10.00 - 19.00
+        .mobile-tabs
+            .dropDownList-title.mobile-tabs__title Характеристики
+            .dropDownList-hidden(style="display: none;")
+                table.table-specifications
+                    tr
+                        td Тип продукта
+                        td Краска акриловая
+                    tr
+                        td Условия применения
+                        td Для наружных работ
+                    tr
+                        td Область применения
+                        td Фасады и стены
+                    tr
+                        td Торговая марка
+                        td Эксперт
+                    tr
+                        td Основа для нанесения
+                        td Бетон, штукатурка, кирпич, камень, гипсокартон, ДСП
+
+
+
+            .dropDownList-title.mobile-tabs__title Способ нанесения
+            .dropDownList-hidden(style="display: none;")
+                .application-method
+                    h2 СПОСОБ НАНЕСЕНИЯ
+                    p Штукатурка готова к применению. Перед нанесением тщательно перемешать. При необходимости, развести водой не более 2%. Поверхность должна быть прочной, чистой и сухой. Поврежденные старые покрытия удалить. Краски на клеевой основе и меловые поверхности тщательно смыть. Мелящиеся поверхности предварительно обработать грунтовкой JOBI PutzGrund. Сильно впитывающие поверхности (гипс, сухие штукатурки) – JOBI TiefGrund. Для улучшения адгезии на гладких поверхностях рекомендуется применить структурную грунтовку JOBI StrukturQuarzGrund. Нанести штукатурку мастерком или кельмой из нержавеющей стали и сразу же сформировать окончательный ровный слой толщиной примерно 1.5 мм. Во избежание образования видимых стыков на покрытии, рекомендуется наносить штукатурку за один проход методом «сырое по сырому». Время полной готовности покрытия к эксплуатации – около 2-3 суток при температуре воздуха +20°С и относительной влажности не более 65%. Не работать в дождь и при температуре ниже +5°С. Сразу после работы инструменты очистить водой.
+                    br
+                    br
+                    h2 ПОДГОТОВКА ПОВЕРХНОСТИ
+                    p Поверхность должна быть прочной, чистой и сухой. Непрочные старые покрытия необходимо удалить. Краски на клеевой основе и меловые поверхности тщательно смыть. Сильно впитывающие поверхности (гипс, сухие штукатурки) обработать грунтовкой JOBI TiefGrund. Новые штукатурные основания просушить в течение 4-6 недель до нанесения JOBI BuntsteinPutz. Для улучшения сцепления на гладких поверхностях рекомендуется использовать структурную грунтовку StrukturQuarzGrund.
+                    br
+                    br
+                    h2 РАСХОД
+                    p Примерно 2-3 кг на 1 кв. м в зависимости от техники нанесения.
+
+
+            .dropDownList-title.mobile-tabs__title Документация
+            .dropDownList-hidden(style="display: none;")
+                a.document(href="#")
+                    .document__ic
+                        img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/word.svg" data-src-small="img/ic/word.svg")
+                    .document__text Свидетельство о государственной регистрации
+                a.document(href="#")
+                    .document__ic
+                        img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/pdf.svg" data-src-small="img/ic/pdf.svg")
+                    .document__text Свидетельство о государственной регистрации
+                a.document(href="#")
+                    .document__ic
+                        img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/excel.svg" data-src-small="img/ic/excel.svg")
+                    .document__text Свидетельство о государственной регистрации
+
+            .dropDownList-title.mobile-tabs__title Наличие в магазинах
+            .dropDownList-hidden(style="display: none;")
+                .availability
+                    .availability__item
+                        .availability-item__name Магазин "Cлон"
+                        .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                        .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br> Вс 10.00 - 19.00
+                    .availability__item
+                        .availability-item__name Магазин "Cлон"
+                        .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                        .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br>Вс 10.00 - 19.00
+                    .availability__item
+                        .availability-item__name Магазин "Cлон"
+                        .availability-item__address г. Краснодар, ул. Вишняковой, 2
+                        .availability-item__openingHours Пн-Сб 10.00 - 20.00, <br> Вс 10.00 - 19.00

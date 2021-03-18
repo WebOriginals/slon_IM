@@ -59,6 +59,7 @@
   @include mq('tablet-wide') {
     grid-template-columns: 25% 42%;
     justify-content: space-between;
+    align-items: center;
   }
   @include mq('desktop') {
     grid-template-columns: 20% 36%;
@@ -149,6 +150,9 @@
   grid-template-columns: 1fr;
   grid-gap: 20px;
   align-items: center;
+  @include mq('desktop') {
+    grid-template-columns: 1fr 1fr;
+  }
   @include mq('2K') {
     grid-template-columns: 1fr 1fr;
   }

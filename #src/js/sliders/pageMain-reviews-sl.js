@@ -13,13 +13,15 @@ $(function () {
                 n;
             };
 
-
+        function updateClasses({ $el, slides, activeIndex }) {
+            $el.find('.swiper-slide-next').next().removeClass('dark-slide');
+            slides.eq(activeIndex).next().next().addClass('dark-slide');
+        }
         $(".reviews-container").each(function () {
 
             var prsl = new Swiper(this, {
 
                 init: false,
-
                 slidesPerView: 1,
                 lazy: true,
                 preloadImages: false,
@@ -47,12 +49,23 @@ $(function () {
                         slidesOffsetBefore: loffset(),
                         slidesOffsetAfter: loffset(),
                     },
-                    2500: {
-                        slidesPerView: 4.5,
-                        slidesOffsetBefore: loffset(),
-                        slidesOffsetAfter: loffset(),
-                    }
-                }
+                    // 2500: {
+                    //     slidesPerView: 4.5,
+                    //     slidesOffsetBefore: loffset(),
+                    //     slidesOffsetAfter: loffset(),
+                    // }
+                },
+
+
+
+                on: {
+                    init() {
+                        updateClasses(this);
+                    },
+                    slideChange() {
+                        updateClasses(this);
+                    },
+                },
 
 
             });
@@ -70,6 +83,7 @@ $(function () {
                     prsl.update(!0);
 
                 });
+
 
         });
     }
