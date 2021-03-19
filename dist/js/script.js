@@ -153,10 +153,16 @@ var swiper = new Swiper('.firstScreen-container', {
                 n = parseInt(n);
                 n;
             };
-
+        if(window.screen.width<=2499) {
         function updateClasses({ $el, slides, activeIndex }) {
             $el.find('.swiper-slide-next').next().removeClass('dark-slide');
             slides.eq(activeIndex).next().next().addClass('dark-slide');
+        }
+        } else {
+            function updateClasses({ $el, slides, activeIndex }) {
+                $el.find('.swiper-slide-next').next().next().removeClass('dark-slide');
+                slides.eq(activeIndex).next().next().next().addClass('dark-slide');
+            }
         }
         $(".reviews-container").each(function () {
 
@@ -166,7 +172,7 @@ var swiper = new Swiper('.firstScreen-container', {
                 slidesPerView: 1,
                 lazy: true,
                 preloadImages: false,
-                slideToClickedSlide: 1,
+                //slideToClickedSlide: 1,
                 navigation: {
                     nextEl: '.reviews-button-next',
                     prevEl: '.reviews-button-prev',
@@ -190,11 +196,11 @@ var swiper = new Swiper('.firstScreen-container', {
                         slidesOffsetBefore: loffset(),
                         slidesOffsetAfter: loffset(),
                     },
-                    // 2500: {
-                    //     slidesPerView: 4.5,
-                    //     slidesOffsetBefore: loffset(),
-                    //     slidesOffsetAfter: loffset(),
-                    // }
+                    2500: {
+                        slidesPerView: 4.5,
+                        slidesOffsetBefore: loffset(),
+                        slidesOffsetAfter: loffset(),
+                    }
                 },
 
 

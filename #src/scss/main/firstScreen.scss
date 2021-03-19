@@ -6,7 +6,7 @@
   left: 0;
   padding-top: 5%;
   overflow: hidden;
-  @include mq('3K') {
+  @include mq('2.5K') {
     padding-top: 0;
   }
 }
@@ -124,7 +124,10 @@
   grid-template-columns: 40% 1fr;
   grid-gap: 20px;
   @include mq('desktop1350') {
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 32% 1fr;
+  }
+  @include mq('2K') {
+    grid-template-columns: 25% 1fr;
   }
 
 }
@@ -137,9 +140,6 @@
 
 .color__content{
   padding: 30px 30px 30px 0;
-  @include mq('desktop-wide') {
-    padding: 30px 30px 60px 0;
-  }
 }
 
 .color-contend__title{
@@ -154,10 +154,7 @@
   grid-gap: 20px;
   align-items: center;
   @include mq('desktop') {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include mq('2K') {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
   }
   @include mq('2.5K') {
     grid-gap: 3px;

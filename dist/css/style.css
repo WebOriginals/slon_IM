@@ -926,10 +926,11 @@ a {
 }
 
 .new-card__img {
+  background: #d0beb0;
   padding-top: 100%;
   background-size: cover;
   background-position: center;
-  background: #d0beb0;
+  background-repeat: no-repeat;
 }
 
 .new-card__name {
@@ -1304,6 +1305,78 @@ a {
 
 .news-main-container {
   padding: 15px;
+}
+
+.reviews-slide__star {
+  margin-top: 10px;
+}
+
+.simple-rating {
+  position: relative;
+  display: inline-block;
+}
+
+.simple-rating:before {
+  content: "";
+  background-image: url("./../../img/ic/Star.svg");
+  display: block;
+  width: 100px;
+  height: 19px;
+}
+
+.simple-rating__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.form__item__input {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.form__item__input:checked,
+.form__item__input:checked ~ .form__item__label:before {
+  opacity: 1;
+}
+
+.form__item__label {
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.form__item__label:before {
+  content: "";
+  background-image: url("./../../img/ic/star-b.svg");
+  display: block;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+
+.form__item__label:hover:before,
+.form__item__label:hover ~ .form__item__label:before,
+.form__item__label:checked ~ .form__item__label:hover:before {
+  opacity: 1;
+}
+
+.dark-slide .simple-rating:before {
+  background-image: url("./../../img/ic/Star-bor-w.svg");
+}
+
+.dark-slide .form__item__label:before {
+  background-image: url("./../../img/ic/Star-back-w.svg");
 }
 
 .sec-reviews {
@@ -2514,7 +2587,7 @@ a {
   }
 
   .color-contend__text-btn {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   .body-step {
@@ -2576,7 +2649,7 @@ a {
   }
 
   .item-color {
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 32% 1fr;
   }
 
   .body-catalog-main {
@@ -2642,10 +2715,6 @@ a {
     padding: 30px;
   }
 
-  .color__content {
-    padding: 30px 30px 60px 0;
-  }
-
   .wrapper-btn {
     grid-template-columns: 1fr 1fr;
   }
@@ -2677,8 +2746,8 @@ a {
     margin-top: 100px;
   }
 
-  .color-contend__text-btn {
-    grid-template-columns: 1fr 1fr;
+  .item-color {
+    grid-template-columns: 25% 1fr;
   }
 
   .body-card-good {
@@ -2691,6 +2760,10 @@ a {
 }
 
 @media only screen and (min-width: 2500px) {
+  .sec-firstScreen {
+    padding-top: 0;
+  }
+
   .firstScreen-slide {
     background-size: 45%;
     background-position: 40% 55%;
@@ -2708,10 +2781,6 @@ a {
 
   .body-header {
     grid-template-columns: 132px 163px 1fr auto;
-  }
-
-  .sec-firstScreen {
-    padding-top: 0;
   }
 
   .firstScreen-slide {
