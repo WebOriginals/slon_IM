@@ -40,6 +40,9 @@ $( document ).ready(function() {
     //фильтер цены
     @@include('filter-price.js')
 
+    //поиск в шапке
+    @@include('header-serch.js')
+
 
 
 })

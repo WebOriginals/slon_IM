@@ -6,6 +6,9 @@
   left: 0;
   padding-top: 5%;
   overflow: hidden;
+  @include mq('3K') {
+    padding-top: 0;
+  }
 }
 
 .firstScreen-container{

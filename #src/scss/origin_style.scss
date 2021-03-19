@@ -138,6 +138,9 @@ a{
   @include mq('2K') {
     max-width: 1585px;
   }
+  @include mq('3K') {
+    max-width: 1900px;
+  }
 }
 
 .square{

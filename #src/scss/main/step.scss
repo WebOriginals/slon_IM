@@ -1,0 +1,111 @@
+.sec-step{
+
+}
+
+.body-step{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
+  @include mq('desktop') {
+    grid-template-columns: 1fr 2fr;
+    grid-gap:  10%;
+    padding-right: 50px;
+  }
+}
+
+.step-grid{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill,minmax(280px, 290px));
+  justify-content: center;
+  @include mq('tablet') {
+    grid-gap: 60px 10%;
+    grid-template-columns: repeat(2,minmax(280px, 290px));
+  }
+  @include mq('desktop') {
+    grid-gap: 60px 17%;
+  }
+}
+
+.step__img{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100%;
+  @include mq('tablet') {
+    width: 70%;
+    margin: auto;
+  }
+  @include mq('desktop') {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.step-grid__el{
+  text-align: center;
+  position: relative;
+
+  @include mq('tablet') {
+    &:first-child:before {
+      content: '';
+      background-image: url('./../../img/main/arrow-r.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 130px;
+      height: 25px;
+      top: 25%;
+      right: -130px;
+      @include mq('2.5K') {
+        right: calc(-130px - 8%);
+      }
+    }
+    &:last-child{
+      &:before {
+        content: '';
+        background-image: url('./../../img/main/arrow-l.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 130px;
+        height: 25px;
+        top: 25%;
+        right: -130px;
+        @include mq('2.5K') {
+          right: calc(-130px - 8%);
+        }
+      }
+    }
+    &:nth-child(2):before {
+      content: '';
+      background-image: url('./../../img/main/arrow-down.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 60px;
+      height: 320px;
+      top: 40%;
+      right: -60px;
+    }
+    &:nth-child(3){
+      order: 1;
+    }
+  }
+  .step-grid__ic{
+    @include adaptiv-margin-bottom(20,30);
+    img{
+      max-width: 100%;
+    }
+  }
+  .step-grid__title{
+    @include adaptiv-font(20,18);
+    font-weight: bold;
+    margin-bottom: 15px;
+    @include mq('tablet-wide') {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $color_3b;
+    }
+  }
+  .step-grid__description{
+
+  }
+}
