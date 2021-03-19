@@ -235,11 +235,11 @@ a {
   padding-right: 15px;
   background-position: right;
   background-repeat: no-repeat;
-  background-image: url("./../../../img/ic/arrow-black.svg");
+  background-image: url("./../img/ic/arrow-black.svg");
 }
 
 .dropDownList-title.open {
-  background-image: url("./../../../img/ic/arrow-eylloy.svg");
+  background-image: url("./../img/ic/arrow-eylloy.svg");
 }
 
 .dropDownList-hidden {
@@ -484,6 +484,8 @@ a {
 }
 
 .footer {
+  position: relative;
+  z-index: 10;
   background: #161616;
   padding: 50px 0;
   color: #FFFFFF;
@@ -1009,7 +1011,7 @@ a {
 .input-checkbox[type=checkbox]:checked + .label-checkbox:after,
 .input-checkbox[type=radio]:checked + .label-checkbox:after {
   content: "";
-  background-image: url("../img/ic/checkbox.svg");
+  background-image: url("./../img/ic/checkbox.svg");
   background-position: 4px 0px;
   background-repeat: no-repeat;
   top: 0px;
@@ -1120,6 +1122,12 @@ a {
   overflow: hidden;
 }
 
+.body-firstScreen {
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
 .firstScreen-slide {
   background-repeat: no-repeat;
   height: 100vh;
@@ -1195,6 +1203,9 @@ a {
 }
 
 .sec-popular {
+  background: #FFFFFF;
+  z-index: 10;
+  position: relative;
   padding: 43px 0;
 }
 
@@ -1233,6 +1244,12 @@ a {
 
 .popular-slide {
   height: auto;
+}
+
+.sec-step {
+  background: #FFFFFF;
+  z-index: 10;
+  position: relative;
 }
 
 .body-step {
@@ -1276,6 +1293,9 @@ a {
 }
 
 .sec-catalog-main {
+  background: #FFFFFF;
+  z-index: 10;
+  position: relative;
   padding: 43px 0;
 }
 
@@ -1295,6 +1315,9 @@ a {
 }
 
 .sec-news-main {
+  background: #FFFFFF;
+  z-index: 10;
+  position: relative;
   padding: 43px 0;
 }
 
@@ -1318,7 +1341,7 @@ a {
 
 .simple-rating:before {
   content: "";
-  background-image: url("./../../img/ic/Star.svg");
+  background-image: url("./../img/ic/Star.svg");
   display: block;
   width: 100px;
   height: 19px;
@@ -1358,7 +1381,7 @@ a {
 
 .form__item__label:before {
   content: "";
-  background-image: url("./../../img/ic/star-b.svg");
+  background-image: url("./../img/ic/star-b.svg");
   display: block;
   height: 100%;
   opacity: 0;
@@ -1372,14 +1395,17 @@ a {
 }
 
 .dark-slide .simple-rating:before {
-  background-image: url("./../../img/ic/Star-bor-w.svg");
+  background-image: url("./../img/ic/Star-bor-w.svg");
 }
 
 .dark-slide .form__item__label:before {
-  background-image: url("./../../img/ic/Star-back-w.svg");
+  background-image: url("./../img/ic/Star-back-w.svg");
 }
 
 .sec-reviews {
+  background: #FFFFFF;
+  z-index: 10;
+  position: relative;
   padding: 43px 0;
 }
 
@@ -1516,13 +1542,13 @@ a {
   padding-bottom: 10px;
   cursor: pointer;
   padding-right: 15px;
-  background-image: url("./../../img/ic/arrow-black.svg");
+  background-image: url("./../img/ic/arrow-black.svg");
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .category-filter.open {
-  background-image: url("./../../img/ic/arrow-eylloy.svg");
+  background-image: url("./../img/ic/arrow-eylloy.svg");
 }
 
 .wrapper-radio {

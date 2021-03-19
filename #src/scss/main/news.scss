@@ -1,4 +1,7 @@
 .sec-news-main{
+  background: $color_2w;
+  z-index: 10;
+  position: relative;
   padding: 43px 0;
   @include mq('tablet-wide') {
     padding: 75px 0;
