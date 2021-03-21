@@ -33,17 +33,21 @@
   }
 }
 
-.popup{
-  z-index: 11;
-}
+
 
 .popup__content{
-
-  border: 3px solid $color_1e;
+  border: 5px solid $color_1e;
   padding: 60px 40px;
   @include maq('tablet-wide') {
     background-image: none !important;
   }
+  @include mq('tablet-wide') {
+    padding: 60px 50px;
+    box-shadow: 0px 4px 50px 22px rgba(245, 223, 77, 0.15);
+  }
+}
+
+.popup__content-modific{
   @include mq('tablet-wide') {
     padding: 60px 50px;
     padding-right: 30%;
@@ -66,6 +70,15 @@
   }
   @include mq('3K') {
     padding-right: 24%;
+  }
+}
+
+.popup-thanks{
+  .popup__content{
+    text-align: center;
+  }
+  .modal-btn{
+    margin: 30px auto 0;
   }
 }
 

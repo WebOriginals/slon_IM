@@ -11,11 +11,11 @@
   }
 }
 
-.body-firstScreen{
-  position: fixed;
-  left: 0;
-  width: 100%;
-}
+//.body-firstScreen{
+//  position: fixed;
+//  left: 0;
+//  width: 100%;
+//}
 
 .firstScreen-slide{
 
@@ -160,5 +160,20 @@
   }
   @include mq('2.5K') {
     grid-gap: 3px;
+  }
+}
+
+.mask{
+  overflow: hidden;
+  height: 100vh;
+  &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 18, 28, 0.52);
+    left: 0px;
+    top: 0px;
+    z-index: 15;
   }
 }

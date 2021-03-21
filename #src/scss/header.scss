@@ -85,11 +85,14 @@
 }
 
 .body-header__bottom{
+  position: relative;
+  bottom: 57px;
+
   display: none;
   background: $color_2w;
   width: 100%;
-  position: absolute;
-  bottom: -52px;
+  //position: absolute;
+  //bottom: -52px;
   left: 0;
   transform: translateY(65px);
   z-index: 9;
@@ -143,4 +146,11 @@
 
 .body-header__bottom-open{
   display: block;
+}
+
+.cust{
+  background-color: #fff;
+  z-index:16;
+  position:relative;
+  padding-right:15px !important;
 }

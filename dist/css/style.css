@@ -394,6 +394,7 @@ body.lock {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.8s ease 0s;
+  z-index: 15;
 }
 
 .popup.open {
@@ -506,11 +507,11 @@ body.lock {
 }
 
 .body-header__bottom {
+  position: relative;
+  bottom: 57px;
   display: none;
   background: #FFFFFF;
   width: 100%;
-  position: absolute;
-  bottom: -52px;
   left: 0;
   transform: translateY(65px);
   z-index: 9;
@@ -559,6 +560,13 @@ body.lock {
 
 .body-header__bottom-open {
   display: block;
+}
+
+.cust {
+  background-color: #fff;
+  z-index: 16;
+  position: relative;
+  padding-right: 15px !important;
 }
 
 .footer {
@@ -849,13 +857,17 @@ body.lock {
   background: transparent;
 }
 
-.popup {
-  z-index: 11;
+.popup__content {
+  border: 5px solid #F5DF4D;
+  padding: 60px 40px;
 }
 
-.popup__content {
-  border: 3px solid #F5DF4D;
-  padding: 60px 40px;
+.popup-thanks .popup__content {
+  text-align: center;
+}
+
+.popup-thanks .modal-btn {
+  margin: 30px auto 0;
 }
 
 .testbtn {
@@ -866,6 +878,33 @@ body.lock {
 
 .sec-title {
   padding: 30px 0 10px;
+}
+
+.body-cooki {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #FFFFFF;
+  z-index: 12;
+  padding: 40px 50px;
+  max-width: 950px;
+}
+
+.cooki-btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.wrapper-contant-cooki {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 35px;
+  align-items: center;
+}
+
+.contant-cooki__img img {
+  max-width: 100%;
 }
 
 .card-good-body {
@@ -1195,12 +1234,6 @@ body.lock {
   overflow: hidden;
 }
 
-.body-firstScreen {
-  position: fixed;
-  left: 0;
-  width: 100%;
-}
-
 .firstScreen-slide {
   background-repeat: no-repeat;
   height: 100vh;
@@ -1273,6 +1306,22 @@ body.lock {
   grid-template-columns: 1fr;
   grid-gap: 20px;
   align-items: center;
+}
+
+.mask {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.mask:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 18, 28, 0.52);
+  left: 0px;
+  top: 0px;
+  z-index: 15;
 }
 
 .sec-popular {
@@ -2410,6 +2459,11 @@ body.lock {
 
   .popup__content {
     padding: 60px 50px;
+    box-shadow: 0px 4px 50px 22px rgba(245, 223, 77, 0.15);
+  }
+
+  .popup__content-modific {
+    padding: 60px 50px;
     padding-right: 30%;
     box-shadow: 0px 4px 50px 22px rgba(245, 223, 77, 0.15);
     background-size: 35%;
@@ -2670,7 +2724,7 @@ body.lock {
     display: block;
   }
 
-  .popup__content {
+  .popup__content-modific {
     max-width: 1140px;
   }
 
@@ -2818,7 +2872,7 @@ body.lock {
     width: 40px;
   }
 
-  .popup__content {
+  .popup__content-modific {
     max-width: 1400px;
   }
 
@@ -2848,7 +2902,7 @@ body.lock {
     margin-right: 30px;
   }
 
-  .popup__content {
+  .popup__content-modific {
     background-size: auto;
     max-width: 1555px;
   }
@@ -2903,7 +2957,7 @@ body.lock {
     grid-template-columns: 132px 163px 1fr auto;
   }
 
-  .popup__content {
+  .popup__content-modific {
     padding-right: 24%;
   }
 
