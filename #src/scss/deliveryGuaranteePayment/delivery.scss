@@ -22,7 +22,7 @@
 }
 
 .question-answer__img{
-  @include maq('tablet') {
+  @include maq('tablet-990') {
     order: -1;
   }
   background-position: center;

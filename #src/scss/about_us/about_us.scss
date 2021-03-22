@@ -31,6 +31,7 @@ padding: 0 0 85px;
       display: block;
       @include maq('tablet') {
         margin: auto;
+        width: 70%;
       }
     }
   }

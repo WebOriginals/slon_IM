@@ -1,4 +1,6 @@
 .footer{
+  position: relative;
+  z-index: 10;
   background: $color_3b;
   padding: 50px 0;
   color: $color_2w;
@@ -34,6 +36,10 @@
   @include adaptiv-margin-bottom(90,55);
   @include mq('tablet') {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include mq('desktop') {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
   }
   @include mq('desktop1350') {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 195px;

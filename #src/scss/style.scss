@@ -8,6 +8,8 @@
 @import "../component/dropDownLlist/scss/dropDownLlist.scss";
 @import "../component/Tabs/scss/tabs.scss";
 @import "../component/InputList/scss/InpuList.scss";
+@import "../component/map/scss/map.scss";
+@import "../component/Modals/scss/modals.scss";
 
 
 
@@ -15,6 +17,8 @@
 @import "footer.scss";
 @import "menu.scss";
 @import "modal.scss";
+@import "title.scss";
+@import "cooki.scss";
 
 @import "card-goods.scss";
 @import "card-news.scss";
@@ -26,6 +30,7 @@
 //main
 @import "main/firstScreen.scss";
 @import "main/popular.scss";
+@import "main/step.scss";
 @import "main/catalog.scss";
 @import "main/news.scss";
 @import "main/reviews.scss";
@@ -51,3 +56,9 @@
 
 //blog
 @import "blog/blog.scss";
+
+//contact
+@import "contacts/contact.scss";
+
+//404
+@import "404/404.scss";

@@ -1,0 +1,29 @@
+.body-cooki{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: $color_2w;
+  z-index: 12;
+  padding: 40px 50px;
+  max-width: 950px;
+}
+
+.cooki-btn-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.wrapper-contant-cooki{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 35px;
+  align-items: center;
+}
+
+.contant-cooki__img{
+
+  img{
+    max-width: 100%;
+  }
+}

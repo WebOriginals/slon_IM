@@ -3,7 +3,7 @@ $color_1e: #F5DF4D;
 $color_2w: #FFFFFF;
 $color_3b: #161616;
 $color_4g: #BDBBBB;
-$link-img: '';
+$link-img: './..';
 
 
 body {
@@ -137,6 +137,9 @@ a{
   }
   @include mq('2K') {
     max-width: 1585px;
+  }
+  @include mq('3K') {
+    max-width: 1900px;
   }
 }
 

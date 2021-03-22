@@ -8,13 +8,17 @@ html(lang="ru")
         link(rel="preload" as="style" onload="this.rel='stylesheet'" href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel="stylesheet" href="css/style.min.css")
 
-    body
+    body.home
         include pug/header
         include pug/main/firstScreen
         include pug/main/popular
+        include pug/main/step
         include pug/main/catalog
-        include pug/main/news
         include pug/main/reviews
+        include pug/main/news
+        include pug/footer
+        include pug/cooki
+        include pug/modals
 
 
 

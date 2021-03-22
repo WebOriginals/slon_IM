@@ -1,12 +1,14 @@
 .header{
-  //position: absolute;
-  //width: 100%;
-
   z-index: 10;
   padding: 18px 0;
   @include mq('desktop') {
     padding: 20px 0;
   }
+}
+
+.home .header {
+  position: absolute;
+  width: 100%;
 }
 
 .body-header{
@@ -27,10 +29,14 @@
     grid-gap: 60px;
   }
   @include mq('desktop-wide') {
-    grid-template-columns: 132px 150px 1fr auto;
+    grid-template-columns: 132px 155px 1fr auto;
     grid-gap: 90px;
   }
+  @include mq('3K') {
+    grid-template-columns: 132px 163px 1fr auto;
+  }
 }
+
 .wrapper-ic-btn{
   text-align: end;
   a{
@@ -46,6 +52,7 @@
     }
   }
 }
+
 .wrapper-phone{
   @include maq('tablet') {
     display: none;
@@ -57,6 +64,7 @@
     padding: 5px;
   }
 }
+
 .wrapper-logo{
   .logo{
     img{
@@ -71,6 +79,78 @@
   top: -5px;
   right: -2px;
 }
+
 .ic-btn__bascket{
   position: relative;
+}
+
+.body-header__bottom{
+  position: relative;
+  bottom: 57px;
+
+  display: none;
+  background: $color_2w;
+  width: 100%;
+  //position: absolute;
+  //bottom: -52px;
+  left: 0;
+  transform: translateY(65px);
+  z-index: 9;
+
+  .wrapper-search-header{
+    display: flex;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .wrapper-search-header__input{
+    flex: 1 1 auto;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  .search-header__input{
+    background: $color_2w;
+    padding: 5px 15px;
+    width: 100%;
+    @include adaptiv-font(30, 20);
+    color: $color_3b;
+
+    &::placeholder{
+      @include adaptiv-font(30, 20);
+      font-weight: bold;
+      color: $color_4g;
+    }
+  }
+
+  .wrapper-search-header__go{
+    flex: 0 0 22px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .wrapper-search-header__close{
+    align-self: center;
+    flex: 0 0 22px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+
+  @include maq('desktop') {
+    padding: 0 15px;
+    transform: translateY(75px);
+  }
+}
+
+.body-header__bottom-open{
+  display: block;
+}
+
+.cust{
+  background-color: #fff;
+  z-index:16;
+  position:relative;
+  padding-right:15px !important;
 }

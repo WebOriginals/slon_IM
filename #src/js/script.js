@@ -20,6 +20,8 @@ $( document ).ready(function() {
     @@include('../component/dropDownLlist/js/dropDownList.js')
     @@include('../component/InputList/js/InputList.js')
     @@include('../component/Tabs/js/Tabs.js')
+    @@include('../component/map/js/map.js')
+    @@include('../component/Modals/js/modal.js')
     // end component
 
 
@@ -38,5 +40,10 @@ $( document ).ready(function() {
 
     //фильтер цены
     @@include('filter-price.js')
+
+    //поиск в шапке
+    @@include('header-serch.js')
+
+
 
 })

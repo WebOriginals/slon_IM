@@ -1,0 +1,39 @@
+.sec-404{
+  padding: 50px 0 120px;
+  @include mq('tablet') {
+    padding: 110px 0 120px;
+  }
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:  center;
+  @include mq('tablet') {
+    background-position:  60% center ;
+  }
+}
+
+
+.title-404 {
+  @include adaptiv-font(36, 24);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.text-404 {
+  width: 100%;
+  @include mq('tablet') {
+    width: 50%;
+  }
+  @include mq('tablet-wide') {
+    width: 30%;
+  }
+  margin-bottom: 20px;
+}
+
+.img-404{
+ @include adaptiv-margin-bottom(80,50);
+
+  img{
+    max-width: 100%;
+  }
+}

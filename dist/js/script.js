@@ -153,18 +153,26 @@ var swiper = new Swiper('.firstScreen-container', {
                 n = parseInt(n);
                 n;
             };
-
-
+        if(window.screen.width<=2499) {
+        function updateClasses({ $el, slides, activeIndex }) {
+            $el.find('.swiper-slide-next').next().removeClass('dark-slide');
+            slides.eq(activeIndex).next().next().addClass('dark-slide');
+        }
+        } else {
+            function updateClasses({ $el, slides, activeIndex }) {
+                $el.find('.swiper-slide-next').next().next().removeClass('dark-slide');
+                slides.eq(activeIndex).next().next().next().addClass('dark-slide');
+            }
+        }
         $(".reviews-container").each(function () {
 
             var prsl = new Swiper(this, {
 
                 init: false,
-
                 slidesPerView: 1,
                 lazy: true,
                 preloadImages: false,
-                slideToClickedSlide: 1,
+                //slideToClickedSlide: 1,
                 navigation: {
                     nextEl: '.reviews-button-next',
                     prevEl: '.reviews-button-prev',
@@ -193,7 +201,18 @@ var swiper = new Swiper('.firstScreen-container', {
                         slidesOffsetBefore: loffset(),
                         slidesOffsetAfter: loffset(),
                     }
-                }
+                },
+
+
+
+                on: {
+                    init() {
+                        updateClasses(this);
+                    },
+                    slideChange() {
+                        updateClasses(this);
+                    },
+                },
 
 
             });
@@ -211,6 +230,7 @@ var swiper = new Swiper('.firstScreen-container', {
                     prsl.update(!0);
 
                 });
+
 
         });
     }
@@ -396,6 +416,167 @@ var swiper = new Swiper('.firstScreen-container', {
     }
     tab();
 };
+    if ($('#map').length) {
+
+
+    var myMap;
+
+    ymaps.ready(init);
+
+    function init() {
+
+        myMap = new ymaps.Map('map', {
+
+            center: [45.350942, 39.058194],
+            controls: [],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+        var myPlacemark = new ymaps.Placemark([45.350942, 39.058194], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: './../../img/ic/point-map.svg',
+            iconImageSize: [30, 42],
+            iconImageOffset: [-15, -40]
+        });
+
+// Размещение геообъекта на карте.
+        myMap.geoObjects
+            .add(myPlacemark);
+
+// Добавим на карту ползунок масштаба и линейку.
+        myMap.controls.add('zoomControl');
+
+//Отключить изменение маштаба колесом и косанием
+        myMap.behaviors.disable(['scrollZoom', 'multiTouch', 'drag']);
+    }
+
+}
+    const popupLinks = document.querySelectorAll('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll(".lock-padding");
+
+let unlock = true;
+
+const timeout = 800;
+
+if (popupLinks.length > 0) {
+    for (let index = 0; index < popupLinks.length; index++) {
+        const popupLink = popupLinks[index];
+        popupLink.addEventListener("click", function (e) {
+            const popupName = popupLink.getAttribute('href').replace('#', '');
+            const curentPopup = document.getElementById(popupName);
+            popupOpen(curentPopup);
+            e.preventDefault();
+        });
+    }
+}
+const popupCloseIcon = document.querySelectorAll('.close-popup');
+if (popupCloseIcon.length > 0) {
+    for (let index = 0; index < popupCloseIcon.length; index++) {
+        const el = popupCloseIcon[index];
+        el.addEventListener('click', function (e) {
+            popupClose(el.closest('.popup'));
+            e.preventDefault();
+        });
+    }
+}
+
+function popupOpen(curentPopup) {
+    if (curentPopup && unlock) {
+        const popupActive = document.querySelector('.popup.open');
+        if (popupActive) {
+            popupClose(popupActive, false);
+        } else {
+            bodyLock();
+        }
+        curentPopup.classList.add('open');
+        curentPopup.addEventListener("click", function (e) {
+            if (!e.target.closest('.popup__content')) {
+                popupClose(e.target.closest('.popup'));
+            }
+        });
+    }
+}
+
+function popupClose(popupActive, doUnlock = true) {
+    if (unlock) {
+        popupActive.classList.remove('open');
+        if (doUnlock) {
+            bodyUnLock();
+        }
+    }
+}
+
+function bodyLock() {
+    const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+
+    if (lockPadding.length > 0) {
+        for (let index = 0; index < lockPadding.length; index++) {
+            const el = lockPadding[index];
+            el.style.paddingRight = lockPaddingValue;
+        }
+    }
+    body.style.paddingRight = lockPaddingValue;
+    body.classList.add('lock');
+
+    unlock = false;
+    setTimeout(function () {
+        unlock = true;
+    }, timeout);
+}
+
+function bodyUnLock() {
+    setTimeout(function () {
+        if (lockPadding.length > 0) {
+            for (let index = 0; index < lockPadding.length; index++) {
+                const el = lockPadding[index];
+                el.style.paddingRight = '0px';
+            }
+        }
+        body.style.paddingRight = '0px';
+        body.classList.remove('lock');
+    }, timeout);
+
+    unlock = false;
+    setTimeout(function () {
+        unlock = true;
+    }, timeout);
+}
+
+document.addEventListener('keydown', function (e) {
+    if (e.which === 27) {
+        const popupActive = document.querySelector('.popup.open');
+        popupClose(popupActive);
+    }
+});
+
+(function () {
+    // проверяем поддержку
+    if (!Element.prototype.closest) {
+        // реализуем
+        Element.prototype.closest = function (css) {
+            var node = this;
+            while (node) {
+                if (node.matches(css)) return node;
+                else node = node.parentElement;
+            }
+            return null;
+        };
+    }
+})();
+(function () {
+    // проверяем поддержку
+    if (!Element.prototype.matches) {
+        // определяем свойство
+        Element.prototype.matches = Element.prototype.matchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector;
+    }
+})();
+
     // end component
 
 
@@ -731,5 +912,30 @@ if( $( '.filter-slider-price' ).length ) {
     rangeBlock.addEventListener('mousedown', check);
     rangeBlock.addEventListener('touchstart', check);
 }
+
+    //поиск в шапке
+    if( $( '.ic-btn__search' ).length ) {
+    $(".ic-btn__search").click(function () {
+        $(this).toggleClass("active");
+        if (this.classList.contains("active") === true) {
+            $('.body-header__bottom').addClass("body-header__bottom-open");
+            $('.header').addClass("cust");
+            $('body').addClass("mask");
+        } else {
+            $('.body-header__bottom').removeClass("body-header__bottom-open");
+            $('body').removeClass("mask");
+            $('.header').removeClass("cust");
+        }
+    });
+    $(".wrapper-search-header__close").click(function () {
+        $('.search-header').removeClass("active");
+        $('.body-header__bottom').removeClass("body-header__bottom-open");
+        $('body').removeClass("mask");
+        $('.header').removeClass("cust");
+    });
+}
+
+
+
 
 })

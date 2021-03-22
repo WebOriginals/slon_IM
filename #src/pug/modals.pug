@@ -1,0 +1,30 @@
+a.popup-link.testbtn(href='#popup') попап 1
+a.popup-link.testbtn(href='#popup_2') попап 2
+#popup.popup
+    .popup__body
+        .popup__content.popup__content-modific.b-lazy(data-src="img/modal.png")
+            a.popup__close.close-popup(href='#header')
+                img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/close-e.svg" data-src-small="img/ic/close-e.svg" alt="")
+            .popup__title Оформить заказ
+            .popup__text
+                p Оставьте свои контактые данные и наш менеджер свяжется с вами в течении 10 минут
+
+            form.modal-form
+                .wrapper-input-modal
+                    input.input(placeholder="Имя*")
+                    input.input(placeholder="Телефон*")
+                    input.input(placeholder="E-mail")
+                    input.input(placeholder="Ваш комментарий")
+                .politica
+                    p Нажимая на кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+
+                .modal-btn.button Отправить
+
+#popup_2.popup.popup-thanks
+    .popup__body
+        .popup__content
+            a.popup__close.close-popup(href='#header')
+                img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/close-e.svg" data-src-small="img/ic/close-e.svg" alt="")
+            .popup__title Спасибо за заказ!
+            .popup__text Наш менеджер свяжется с вами в течении 10 минут
+            .modal-btn.button вернуться на главную
