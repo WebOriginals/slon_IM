@@ -25,6 +25,7 @@
 
   @include mq('tablet') {
     grid-template-columns: 1fr 1fr;
+    height: fit-content;
   }
   @include mq('desktop1350') {
     grid-template-columns: 1fr 1fr 1fr;

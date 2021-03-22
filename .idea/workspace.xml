@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90488f58-3161-4540-8fc8-03a0f12aeea1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/#src/basket.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/basket.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/card-good.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/card-good.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/catalog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/catalog.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/pug/catalog/catalog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#src/pug/catalog/catalog.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/about_us/about_us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/about_us/about_us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/card-good/tab.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/card-good/tab.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/card-goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/card-goods.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/catalog/catalog-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/catalog/catalog-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/catalog/saitbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blog-internal.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blog-internal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/card-good.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/card-good.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/deliveryGuaranteePayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/deliveryGuaranteePayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modal.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1q6juNpa99FpFTfSo7E9r5X6AJX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90488f58-3161-4540-8fc8-03a0f12aeea1" name="Default Changelist" comment="" />
+      <created>1616407155621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616407155621</updated>
+      <workItem from="1616407156722" duration="627000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
