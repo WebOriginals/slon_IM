@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc19eee4-af7c-4c67-836d-9f836ebe0703" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/#src/blog-internal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/blog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/about_us/about_us.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/blog/blog-intarnal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/blog/blog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/pug/pagination.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/blog/blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/pagenation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readME" beforeDir="false" afterPath="$PROJECT_DIR$/readME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/slon_IM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +107,9 @@
       <workItem from="1615985070354" duration="1697000" />
       <workItem from="1615987220127" duration="1780000" />
       <workItem from="1615989063603" duration="1153000" />
-      <workItem from="1615990951830" duration="1096000" />
+      <workItem from="1615990951830" duration="1906000" />
+      <workItem from="1616395047556" duration="6000" />
+      <workItem from="1616395130096" duration="441000" />
     </task>
     <servers />
   </component>
