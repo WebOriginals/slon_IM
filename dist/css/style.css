@@ -1708,6 +1708,11 @@ body.lock {
   align-items: center;
 }
 
+.label-radio.active {
+  color: #161616;
+  font-weight: 500;
+}
+
 .range {
   position: relative;
   width: 264px;

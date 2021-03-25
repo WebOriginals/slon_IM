@@ -583,7 +583,7 @@ document.addEventListener('keydown', function (e) {
 
     //меню
     parameters = {
-    duration: 800,
+    duration: 300,
 }
 
 if( $( '.body-header' ).length ) {

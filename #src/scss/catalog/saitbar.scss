@@ -118,3 +118,8 @@
   grid-gap: 20px;
   align-items: center;
 }
+
+.label-radio.active{
+  color: $color_3b;
+  font-weight: 500;
+}
