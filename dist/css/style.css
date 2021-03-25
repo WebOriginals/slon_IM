@@ -1708,7 +1708,7 @@ body.lock {
   align-items: center;
 }
 
-.label-radio.active {
+.link-drop-down.active {
   color: #161616;
   font-weight: 500;
 }
