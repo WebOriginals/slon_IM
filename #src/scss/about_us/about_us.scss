@@ -29,9 +29,10 @@ padding: 0 0 85px;
     img{
       max-width: 100%;
       display: block;
+      width: 70%;
       @include maq('tablet') {
         margin: auto;
-        width: 70%;
+
       }
     }
   }
@@ -51,13 +52,18 @@ padding: 0 0 85px;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-
+  @include mq('desktop') {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 94px;
+  }
 
   img{
     align-self: center;
     display: block;
+    max-width: 100%;
     @include maq('desktop') {
-      max-width: 100%;
+
       &:not(:last-child){
         display: block;
         margin-bottom: 30px;

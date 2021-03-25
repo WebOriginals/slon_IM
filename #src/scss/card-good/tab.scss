@@ -61,6 +61,7 @@
 
 .availability-item__name{
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .availability-item__address{
@@ -78,4 +79,9 @@
   font-weight: bold;
   @include adaptiv-font(18,18);
   margin-bottom:20px;
+}
+
+.tabs-nav__item{
+  text-transform: uppercase;
+  font-weight: bold;
 }

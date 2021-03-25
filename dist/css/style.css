@@ -976,10 +976,15 @@ body.lock {
   justify-content: space-between;
 }
 
+.card-info__minus {
+  padding: 5px 0;
+}
+
 .card-info__minus,
 .card-info__plus {
   align-self: center;
   height: auto;
+  cursor: pointer;
 }
 
 .card-info__minus img,
@@ -1661,7 +1666,7 @@ body.lock {
 .category-filter {
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   cursor: pointer;
   padding-right: 15px;
   background-image: url("./../img/ic/arrow-black.svg");
@@ -1860,6 +1865,7 @@ body.lock {
 
 .availability-item__name {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .availability-item__address {
@@ -1875,6 +1881,11 @@ body.lock {
   font-weight: bold;
   font-size: calc(18px + 0 * ((100vw - 320px) / 1600));
   margin-bottom: 20px;
+}
+
+.tabs-nav__item {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .sec-basket {
@@ -2051,6 +2062,7 @@ body.lock {
 .wrapper-logo-text .wrapper-logo img {
   max-width: 100%;
   display: block;
+  width: 70%;
 }
 
 .wrapper-text h2 {
@@ -2069,6 +2081,7 @@ body.lock {
 .wrapper-numbers img {
   align-self: center;
   display: block;
+  max-width: 100%;
 }
 
 .sec-blog {
@@ -2323,6 +2336,7 @@ body.lock {
 
   .wrapper-catalog {
     grid-template-columns: 1fr 1fr;
+    height: fit-content;
   }
 
   .body-card-good {
@@ -2784,6 +2798,12 @@ body.lock {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+
+  .wrapper-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 94px;
+  }
 }
 
 @media only screen and (min-width: 1350px) {
@@ -2882,6 +2902,10 @@ body.lock {
 
   .card-good-body {
     padding: 30px;
+  }
+
+  .card-info__number {
+    font-size: 18px;
   }
 
   .wrapper-btn {
@@ -3095,10 +3119,6 @@ body.lock {
     text-align: left;
   }
 
-  .wrapper-numbers img {
-    max-width: 100%;
-  }
-
   .wrapper-numbers img:not(:last-child) {
     display: block;
     margin-bottom: 30px;
@@ -3180,7 +3200,6 @@ body.lock {
 
   .wrapper-logo-text .wrapper-logo img {
     margin: auto;
-    width: 70%;
   }
 }
 
