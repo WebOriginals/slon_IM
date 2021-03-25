@@ -1,5 +1,5 @@
 parameters = {
-    duration: 1500,
+    duration: 800,
 }
 
 if( $( '.body-header' ).length ) {

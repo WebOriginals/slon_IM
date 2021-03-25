@@ -1082,8 +1082,8 @@ body.lock {
 }
 
 .label-radio:hover {
-  color: #F5DF4D;
-  font-weight: bold;
+  color: #161616;
+  font-weight: 500;
 }
 
 .input-radio {
@@ -1091,8 +1091,8 @@ body.lock {
 }
 
 .input-radio:checked + .label-radio {
-  color: #F5DF4D;
-  font-weight: bold;
+  color: #161616;
+  font-weight: 500;
 }
 
 .label-checkbox {
@@ -2613,7 +2613,7 @@ body.lock {
   }
 
   .wrapper-radio {
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 10px 25px;
   }
 
   .wrapper-btn {

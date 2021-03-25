@@ -38,9 +38,6 @@ $( document ).ready(function() {
     // скрипт для открытия блока с фильтрами в каталоге
     @@include('btn-settings-mobile.js')
 
-    //фильтер цены
-    @@include('filter-price.js')
-
     //поиск в шапке
     @@include('header-serch.js')
 

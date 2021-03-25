@@ -3,8 +3,8 @@
   padding: 10px 5px;
   cursor: pointer;
   &:hover{
-    color: $color_1e;
-    font-weight: bold;
+    color: $color_3b;
+    font-weight: 500;
   }
 }
 
@@ -13,8 +13,8 @@
 }
 
 .input-radio:checked + .label-radio{
-  color: $color_1e;
-  font-weight: bold;
+  color: $color_3b;
+  font-weight: 500;
 }
 
 
