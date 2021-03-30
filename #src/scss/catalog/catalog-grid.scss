@@ -15,7 +15,13 @@
   }
   @include mq('desktop1350') {
     grid-template-columns: 24% 1fr;
+  }
 
+  .wrapper-btn-pagination{
+
+    @include mq('tablet-wide') {
+      grid-area: 2/2;
+    }
   }
 }
 .wrapper-catalog{
@@ -31,3 +37,4 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+

@@ -2598,6 +2598,10 @@ body.lock {
     grid-gap: 30px;
   }
 
+  .body-catalog .wrapper-btn-pagination {
+    grid-area: 2/2;
+  }
+
   .saitbar {
     position: relative;
     left: 0;
