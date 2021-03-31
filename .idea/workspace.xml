@@ -51,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KidsGO" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -157,6 +157,7 @@
       <workItem from="1616677986137" duration="2966000" />
       <workItem from="1616737787431" duration="154000" />
       <workItem from="1617103081162" duration="865000" />
+      <workItem from="1617167172656" duration="1852000" />
     </task>
     <servers />
   </component>

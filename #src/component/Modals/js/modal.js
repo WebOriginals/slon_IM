@@ -28,7 +28,7 @@ if (popupCloseIcon.length > 0) {
     }
 }
 
-function popupOpen(curentPopup) {
+window.popupOpen = function(curentPopup){
     if (curentPopup && unlock) {
         const popupActive = document.querySelector('.popup.open');
         if (popupActive) {
