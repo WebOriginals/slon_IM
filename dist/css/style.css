@@ -2194,6 +2194,14 @@ body.lock {
   max-width: 100%;
 }
 
+.sec-favarites {
+  padding: 0 0 50px;
+}
+
+.favarites-btn {
+  margin-top: 30px;
+}
+
 @media only screen and (min-width: 320px) {
   .body-header {
     grid-template-columns: 25px 90px 1fr;
@@ -2419,6 +2427,10 @@ body.lock {
 
   .text-404 {
     width: 50%;
+  }
+
+  .sec-favarites {
+    padding: 0 0 130px;
   }
 }
 
@@ -2886,6 +2898,10 @@ body.lock {
 
   .contacts__map {
     height: 545px;
+  }
+
+  .body-favarites .wrapper-catalog {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

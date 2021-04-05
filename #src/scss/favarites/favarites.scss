@@ -1,0 +1,17 @@
+.sec-favarites{
+  padding: 0 0 50px;
+  @include mq('tablet') {
+    padding: 0 0 130px;
+  }
+}
+.favarites-btn{
+  margin-top: 30px;
+}
+
+.body-favarites{
+  .wrapper-catalog{
+    @include mq('desktop1350') {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  }
+}
