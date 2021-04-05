@@ -1461,74 +1461,6 @@ body.lock {
   margin-top: 10px;
 }
 
-.simple-rating {
-  position: relative;
-  display: inline-block;
-}
-
-.simple-rating:before {
-  content: "";
-  background-image: url("./../img/ic/Star.svg");
-  display: block;
-  width: 100px;
-  height: 19px;
-}
-
-.simple-rating__items {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-}
-
-.form__item__input {
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-}
-
-.form__item__input:checked,
-.form__item__input:checked ~ .form__item__label:before {
-  opacity: 1;
-}
-
-.form__item__label {
-  width: 20px;
-  height: 100%;
-  cursor: pointer;
-}
-
-.form__item__label:before {
-  content: "";
-  background-image: url("./../img/ic/star-b.svg");
-  display: block;
-  height: 100%;
-  opacity: 0;
-  width: 100%;
-}
-
-.form__item__label:hover:before,
-.form__item__label:hover ~ .form__item__label:before,
-.form__item__label:checked ~ .form__item__label:hover:before {
-  opacity: 1;
-}
-
-.dark-slide .simple-rating:before {
-  background-image: url("./../img/ic/Star-bor-w.svg");
-}
-
-.dark-slide .form__item__label:before {
-  background-image: url("./../img/ic/Star-back-w.svg");
-}
-
 .sec-reviews {
   background: #FFFFFF;
   z-index: 10;
@@ -1598,6 +1530,75 @@ body.lock {
   margin-top: 40px;
 }
 
+.simple-rating {
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.simple-rating:before {
+  content: "";
+  background-image: url("./../img/ic/Star.svg");
+  display: block;
+  width: 100px;
+  height: 19px;
+}
+
+.simple-rating__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.form__item__input {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.form__item__input:checked,
+.form__item__input:checked ~ .form__item__label:before {
+  opacity: 1;
+}
+
+.form__item__label {
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.form__item__label:before {
+  content: "";
+  background-image: url("./../img/ic/star-b.svg");
+  display: block;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+
+.form__item__label:hover:before,
+.form__item__label:hover ~ .form__item__label:before,
+.form__item__label:checked ~ .form__item__label:hover:before {
+  opacity: 1;
+}
+
+.dark-slide .simple-rating:before {
+  background-image: url("./../img/ic/Star-bor-w.svg");
+}
+
+.dark-slide .form__item__label:before {
+  background-image: url("./../img/ic/Star-back-w.svg");
+}
+
 .sorting-settings-block {
   display: flex;
   justify-content: space-between;
@@ -1630,6 +1631,11 @@ body.lock {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
+}
+
+.popup-window.popup-window-with-titlebar {
+  padding: 35px;
+  width: 500px;
 }
 
 .saitbar {
