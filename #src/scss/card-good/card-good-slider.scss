@@ -73,3 +73,31 @@
 .wrapper-price-btn{
   width: max-content;
 }
+
+.dropDownLists{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 50px;
+
+  .dropDownLists__packaging{
+    width: 100%;
+    margin-right: 50px;
+    display: flex;
+    margin-bottom: 30px;
+    @include mq('tablet') {
+      width: 160px;
+    }
+    @include mq('tablet-wide') {
+      margin-bottom: 0;
+    }
+  }
+  .dropDownLists__square{
+    width: 100%;
+    display: flex;
+    @include mq('tablet') {
+      width: 180px;
+    }
+  }
+}
