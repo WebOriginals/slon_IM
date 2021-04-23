@@ -239,7 +239,7 @@ var swiper = new Swiper('.firstScreen-container', {
     var sliderLlittle = new Swiper('.slider-little-container', {
         slidesPerView: 3,
         spaceBetween: 15,
-        loop: true,
+        //loop: true,
         lazy: true,
         slideToClickedSlide: true,
         watchSlidesVisibility: true,
