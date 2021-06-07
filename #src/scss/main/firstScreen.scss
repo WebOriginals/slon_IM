@@ -108,11 +108,8 @@
 
 
 .wrapper-color{
-  @include maq('tablet') {
-    display: none;
-  }
+  display: none;
   margin-top: 50px;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   @include mq('2K') {

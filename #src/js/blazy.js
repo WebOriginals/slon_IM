@@ -1,4 +1,4 @@
-if( $( '.b-lazy' ).length ) {
+if ($('.b-lazy').length) {
     var bLazy = new Blazy({
         breakpoints: [{
             width: 420 // Max-width
@@ -15,3 +15,5 @@ if( $( '.b-lazy' ).length ) {
         }
     });
 }
+
+

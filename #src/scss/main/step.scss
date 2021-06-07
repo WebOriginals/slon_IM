@@ -56,7 +56,11 @@
   @include mq('tablet') {
     &:first-child:before {
       content: '';
-      background-image: url('./../../img/main/arrow-r.svg');
+      @if ($link-img == '') {
+        background-image: url('./../../img/main/arrow-r.svg');
+      } @else {
+        background-image: url($link-img + "/img/main/arrow-r.svg");
+      }
       background-repeat: no-repeat;
       position: absolute;
       width: 130px;
@@ -70,7 +74,11 @@
     &:last-child{
       &:before {
         content: '';
-        background-image: url('./../../img/main/arrow-l.svg');
+        @if ($link-img == '') {
+          background-image: url('./../../img/main/arrow-l.svg');
+        } @else {
+          background-image: url($link-img + "/img/main/arrow-l.svg");
+        }
         background-repeat: no-repeat;
         position: absolute;
         width: 130px;
@@ -84,7 +92,11 @@
     }
     &:nth-child(2):before {
       content: '';
-      background-image: url('./../../img/main/arrow-down.svg');
+      @if ($link-img == '') {
+        background-image: url('./../../img/main/arrow-down.svg');
+      } @else {
+        background-image: url($link-img + "/img/main/arrow-down.svg");
+      }
       background-repeat: no-repeat;
       position: absolute;
       width: 60px;

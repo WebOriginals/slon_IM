@@ -36,7 +36,7 @@
 
 $( document ).ready(function() {
     // ленивая загрузка
-    if( $( '.b-lazy' ).length ) {
+    if ($('.b-lazy').length) {
     var bLazy = new Blazy({
         breakpoints: [{
             width: 420 // Max-width
@@ -53,6 +53,9 @@ $( document ).ready(function() {
         }
     });
 }
+
+
+
 
     // sliders
     if ($('.firstScreen-container').length) {
